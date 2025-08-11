@@ -1,0 +1,111 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex-texlive",
+            "command": "C:/texlive/2025/bin/windows/xelatex.exe",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "biber-texlive",
+            "command": "C:/texlive/2025/bin/windows/biber.exe",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "cleanup-aux",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "%DIR%/clean-aux.ps1"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex (TeX Live) + cleanup",
+            "tools": [
+                "xelatex-texlive",
+                "cleanup-aux"
+            ]
+        },
+        {
+            "name": "xelatex ➞ biber ➞ xelatex × 2 (TeX Live) + cleanup",
+            "tools": [
+                "xelatex-texlive",
+                "biber-texlive",
+                "xelatex-texlive",
+                "xelatex-texlive",
+                "cleanup-aux"
+            ]
+        },
+        {
+            "name": "xelatex (TeX Live)",
+            "tools": [
+                "xelatex-texlive"
+            ]
+        },
+        {
+            "name": "xelatex ➞ biber ➞ xelatex × 2 (TeX Live)",
+            "tools": [
+                "xelatex-texlive",
+                "biber-texlive",
+                "xelatex-texlive",
+                "xelatex-texlive"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "xelatex (TeX Live) + cleanup",
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.bibtex": "texfmt",
+    "latex-workshop.formatting.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'"
+    ],
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.interval": 1000,
+    "latex-workshop.latex.watch.delay": 250,
+    "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    // Hide LaTeX auxiliary files from file explorer
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.bcf": true,
+        "**/*.blg": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.glg": true,
+        "**/*.glo": true,
+        "**/*.gls": true,
+        "**/*.idx": true,
+        "**/*.ilg": true,
+        "**/*.ind": true,
+        "**/*.lof": true,
+        "**/*.log": true,
+        "**/*.lot": true,
+        "**/*.nav": true,
+        "**/*.out": true,
+        "**/*.run.xml": true,
+        "**/*.snm": true,
+        "**/*.synctex.gz": true,
+        "**/*.toc": true,
+        "**/*.vrb": true,
+        "**/*.xdv": true,
+        "**/*.acr": true,
+        "**/*.acn": true,
+        "**/*.alg": true,
+        "**/*.glsdefs": true,
+        "**/*.ist": true
+    }
+}

@@ -1,0 +1,61 @@
+
+
+
+
+
+ Contents
+ 1 GeneralIntroduction 10
+ 1.1 Introduction10
+ 1.2 Objective 10
+ 1.3 Dissertationstructure 11
+ 2 BasicConcepts 12
+ 2.1 Introduction12
+ 2.2 WirelessandMobileNetworkingFundamentals 12
+ 2.2.1 Infrastructure-BasedWirelessNetworks 12
+ 2.2.2 MobileNetworksandHandover 13
+ 2.2.3 Ad-HocNetworks:DefinitionsandTypes 13
+ 2.3 VehicularAd-HocNetworks(VANETs) 14
+ 2.3.1 DefinitionandCharacteristics 14
+ 2.3.2 VANETArchitecture 14
+ 2.3.3 CommunicationTypes(V2V,V2I,V2X) 15
+ 2.3.4 ApplicationsinSmartTransportation 16
+ 2.3.5 AttacksandFaultsinVANETs 17
+ 2.3.6 ChallengesinVANETs 18
+ 2.4 MachineLearning(ML) 19
+ 2.4.1 HistoryofMachineLearning19
+ 2.4.2 TaxonomyofMachineLearningModels 20
+ 2.4.3 MachineLearningAlgorithms 22
+ 2.5 DeepLearning 27
+ 2.5.1 Feed-ForwardNeuralNetworks 28
+ 2.5.2 ArtificialNeuralNetwork(ANN)Architecture 28
+ 2.5.3 RecurrentNeuralNetworks(RNN) 29
+ 2.5.4 LongShort-TermMemory(LSTM)30
+ 2.5.5 BidirectionalLSTM(BiLSTM) 30
+ 2.5.6 ConvolutionalNeuralNetworks(CNNs) 31
+ 2.5.7 DeepNeuralNetworks(DNNs) 32
+ 2.5.8 VariationalAutoencoders(VAEs)33
+ 2.5.9 DeepBeliefNetworks(DBNs) 34
+ 2.5.10 ApplicationinTemporalDataandThreatDetection 35
+ 2.6 Metaheuristics 36
+ 5
+2.6.1 DefinitionofaMetaheuristic 36
+ 2.6.2 TaxonomyofMetaheuristics 36
+ 2.6.3 Population-basedalgorithms38
+ 2.6.4 Game-basedalgorithms40
+ 2.7 Conclusion 42
+ 3 StateoftheArt 43
+ 3.1 Introduction43
+ 3.2 VANETCyberthreatMitigationapproaches 43
+ 3.3 VANETCyberthreatMitigationusingnon-hybridapproaches44
+ 3.4 VANETCyberthreatMitigationusinghybridapproaches 48
+ 3.5 Synthesis53
+ 3.5.1 VANETCyberthreatMitigationusingnon-hybridtechniques 53
+ 3.5.2 VANETCyberthreatMitigationusinghybridtechniques 54
+ 3.6 SynthesisofMethodologicalTrendsandResearchGaps 55
+ 3.7 Discussion 56
+ 3.7.1 ComparativeReview 57
+ 3.7.2 CriticalDatasetLimitationsandMethodologicalConcerns 57
+ 3.7.3 TraditionalLimitations 58
+ 3.7.4 ImplicationsforFutureResearch 59
+ 3.8 Conclusion60
+ 4 Conclusion

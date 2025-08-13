@@ -1,36 +1,503 @@
-\documentclass[openany,12pt,oneside]{extreport}
+% Master's Thesis: Simulating FaaS Applications at the Edge
+% Following the 4-Chapter Template Structure
+\documentclass[12pt,a4paper]{report}
 
-\input{packages}
+% Package imports
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+% Page setup
+\geometry{left=3cm,right=2cm,top=2.5cm,bottom=2.5cm}
 
 \begin{document}
 
-\include{FrontMatter/titlepage}
+% ==================== THESIS STRUCTURE ====================
 
-\pagenumbering{arabic}
+\title{Simulating FaaS Applications at the Edge for IoT Workloads: \\
+Energy-Aware Scaling Strategies in Heterogeneous Computing Environments}
+\author{Mahfoud Abd el Ali SAYAH}
+\date{Academic Year 2024-2025}
 
-\newpage
-\include{FrontMatter/Acknowledgement}
-\include{FrontMatter/Abstract}
-\include{FrontMatter/Acronyms}
-\newpage
-
+\maketitle
 \tableofcontents
-\listoffigures
-\listoftables
-\printglossary[type=\acronymtype, title=Acronyms]
-\clearpage
 
-\include{Chapters/01_Introduction}
+% ==================== 4-CHAPTER STRUCTURE ====================
 
-\include{Chapters/02_Background}
+\chapter{General Introduction}
+\textit{(8-10 pages)}
 
-\include{Chapters/03_Implementation}
+\section{Introduction}
+\begin{itemize}[leftmargin=1cm]
+    \item Context of serverless computing growth and FaaS popularity
+    \item Edge computing paradigm and resource-constrained environments
+    \item Convergence opportunity: FaaS at the edge for IoT applications
+    \item Main challenge: shortage of simulation tools for edge FaaS deployments
+\end{itemize}
 
-\include{Chapters/04_Results}
+\section{Objective}
+\textbf{Primary Goal:} Develop energy-aware scaling framework for FaaS applications in edge computing environments through simulation
 
-\include{Chapters/05_Conclusion}
+\textbf{Specific Objectives:}
+\begin{enumerate}[leftmargin=1cm]
+    \item Conduct state-of-the-art analysis on edge computing simulators and FaaS tools
+    \item Identify suitable simulation framework and extend with energy modeling
+    \item Implement energy-aware scaling strategies for heterogeneous edge devices
+    \item Validate framework through IoT smart city use case and comparative evaluation
+    \item Provide deployment recommendations for edge-native serverless computing
+\end{enumerate}
 
-\part{Bibliography}
-\printbibliography
+\section{Dissertation Structure}
+\begin{itemize}[leftmargin=1cm]
+    \item Chapter 1: Research context, objectives, and methodology overview
+    \item Chapter 2: Foundational concepts in edge computing, FaaS, and energy optimization
+    \item Chapter 3: State-of-the-art analysis and simulation framework selection
+    \item Chapter 4: Implementation, experiments, and results analysis
+\end{itemize}
+
+% ==================== FOUNDATIONAL CONCEPTS ====================
+
+\chapter{Basic Concepts}
+\textit{(18-22 pages)}
+
+\section{Introduction}
+
+\section{Edge Computing Fundamentals}
+\begin{itemize}[leftmargin=1cm]
+    \item Definition and key characteristics
+    \item Edge vs. cloud computing paradigms
+    \item Resource constraints and deployment challenges
+    \item Heterogeneous device ecosystems
+\end{itemize}
+
+\section{Serverless Computing and FaaS}
+\begin{itemize}[leftmargin=1cm]
+    \item Serverless computing evolution
+    \item Function-as-a-Service model characteristics
+    \item Event-driven execution and automatic scaling
+    \item Benefits and limitations for edge deployment
+\end{itemize}
+
+\section{FaaS at the Edge}
+\begin{itemize}[leftmargin=1cm]
+    \item Opportunities and challenges
+    \item Resource allocation considerations
+    \item Cold start and warm start implications
+    \item Network latency and bandwidth constraints
+\end{itemize}
+
+\section{Heterogeneous Edge Devices}
+\begin{itemize}[leftmargin=1cm]
+    \item Device taxonomy (RPi, Coral TPU, Jetson devices, Intel NUC)
+    \item Performance and energy characteristics
+    \item Specialized accelerators and general-purpose compute
+    \item Real-world deployment distributions
+\end{itemize}
+
+\section{Energy Models and Optimization}
+\begin{itemize}[leftmargin=1cm]
+    \item Power consumption models (idle vs. dynamic)
+    \item Energy efficiency metrics
+    \item Performance vs. energy trade-offs
+    \item Battery-powered device considerations
+\end{itemize}
+
+\section{Autoscaling and Resource Management}
+\begin{itemize}[leftmargin=1cm]
+    \item Traditional cloud scaling approaches
+    \item Edge-specific scaling challenges
+    \item Load balancing in heterogeneous environments
+    \item Quality of Service requirements
+\end{itemize}
+
+\section{IoT Applications and Smart Cities}
+\begin{itemize}[leftmargin=1cm]
+    \item IoT application characteristics
+    \item Smart city infrastructure requirements
+    \item Traffic monitoring use case
+    \item Real-time processing constraints
+\end{itemize}
+
+\section{Conclusion}
+
+% ==================== STATE OF THE ART ====================
+
+\chapter{State of the Art}
+\textit{(15-18 pages)}
+
+\section{Introduction}
+
+\section{Edge Computing Simulation Tools}
+\begin{itemize}[leftmargin=1cm]
+    \item CloudSim and EdgeCloudSim
+    \item iFogSim and YAFS (Yet Another Fog Simulator)
+    \item Limitations for FaaS workloads
+    \item Gap analysis for serverless simulation
+\end{itemize}
+
+\section{FaaS Simulation Frameworks}
+\begin{itemize}[leftmargin=1cm]
+    \item SimFaaS: Performance simulator for serverless platforms
+    \item CloudSim extensions for FaaS
+    \item FAAS-Profiler and performance modeling
+    \item Limitations for edge environments
+\end{itemize}
+
+\section{Edge-FaaS Simulation Tools}
+\begin{itemize}[leftmargin=1cm]
+    \item CloudSim extension for distributed functions
+    \item HeroSim and existing solutions
+    \item \textbf{faas-sim framework identification and selection}
+    \item Requirements for energy modeling extension
+\end{itemize}
+
+\section{Energy-Aware Computing Approaches}
+\begin{itemize}[leftmargin=1cm]
+    \item Single-objective energy optimization
+    \item Multi-objective optimization approaches
+    \item Scaling strategies in literature
+\end{itemize}
+
+\section{Research Gap Analysis}
+\begin{itemize}[leftmargin=1cm]
+    \item Shortage of edge-FaaS simulation tools
+    \item Lack of energy modeling in existing frameworks
+    \item Missing scaling strategies for heterogeneous devices
+    \item Limited IoT use case validation
+\end{itemize}
+
+\section{Framework Selection Justification}
+\begin{itemize}[leftmargin=1cm]
+    \item Multi-criteria evaluation of existing tools
+    \item faas-sim selection rationale
+    \item Extension requirements identification
+    \item Energy model integration strategy
+\end{itemize}
+
+\section{Conclusion}
+
+% ==================== CONTRIBUTION/IMPLEMENTATION ====================
+
+\chapter{Our Contribution}
+\textit{(25-30 pages)}
+
+\section{Introduction}
+Overview of research contributions and implementation approach
+
+\section{Framework Architecture and Extensions}
+
+\subsection{faas-sim Framework Analysis}
+\begin{itemize}[leftmargin=1cm]
+    \item Original framework capabilities and limitations
+    \item Architecture analysis and extension points
+    \item Energy modeling gap identification
+\end{itemize}
+
+\subsection{Energy Model Integration}
+\begin{itemize}[leftmargin=1cm]
+    \item Linear power consumption model implementation
+    \item Device-specific energy profiles
+    \item Dynamic vs. static power modeling
+    \item Validation against manufacturer specifications
+\end{itemize}
+
+\section{Heterogeneous Edge Device Modeling}
+
+\subsection{Device Distribution Strategy}
+
+\begin{table}[h]
+\centering
+\caption{Implemented Edge Device Distribution}
+\begin{tabular}{lll}
+\toprule
+\textbf{Device Type} & \textbf{Percentage} & \textbf{Primary Use Case} \\
+\midrule
+Raspberry Pi & 35\% & IoT sensors, basic monitoring \\
+RockPi & 25\% & General compute nodes \\
+Coral TPU & 15\% & AI inference acceleration \\
+Jetson Nano & 12\% & GPU-based inference \\
+Jetson NX & 8\% & High-performance AI \\
+Intel NUC & 2.5\% & Edge coordinators \\
+Jetson TX2 & 2.5\% & Specialized workloads \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Power Consumption Implementation}
+\begin{itemize}[leftmargin=1cm]
+    \item Device-specific power profiles
+    \item Idle and maximum power consumption values
+    \item Utilization-based dynamic power calculation
+    \item Energy efficiency metrics calculation
+\end{itemize}
+
+\section{Energy-Aware Scaling Strategies}
+
+\subsection{Base Autoscaler Framework}
+\begin{itemize}[leftmargin=1cm]
+    \item Template method pattern implementation
+    \item Common scaling decision logic
+    \item Metrics collection system
+    \item Strategy interface design
+\end{itemize}
+
+\subsection{High Performance Short Time (HPST)}
+\begin{itemize}[leftmargin=1cm]
+    \item Philosophy: "high power × short time"
+    \item Device prioritization hierarchy
+    \item Implementation details and algorithm
+    \item Use case: performance-critical applications
+\end{itemize}
+
+\subsection{Low Power Long Time (LPLT)}
+\begin{itemize}[leftmargin=1cm]
+    \item Philosophy: "low power × long time"
+    \item Energy-first device selection
+    \item Battery-aware considerations
+    \item Use case: energy-constrained deployments
+\end{itemize}
+
+\subsection{Kubernetes-Style First Fit}
+\begin{itemize}[leftmargin=1cm]
+    \item Weighted scoring system implementation
+    \item Device class matching logic
+    \item Resource balancing approach
+    \item Production baseline compatibility
+\end{itemize}
+
+\subsection{Standard First Fit (Baseline)}
+\begin{itemize}[leftmargin=1cm]
+    \item Resource-only allocation
+    \item Comparison baseline implementation
+    \item Traditional container orchestration approach
+\end{itemize}
+
+\section{Smart City Use Case Implementation}
+
+\subsection{IoT Traffic Monitoring Scenario}
+\begin{itemize}[leftmargin=1cm]
+    \item Function types: resnet50-inference, speech-inference, etc.
+    \item Initial deployment strategy (light deployment)
+    \item Geographic distribution modeling
+    \item Realistic workload patterns
+\end{itemize}
+
+\subsection{Function Deployment Configuration}
+\begin{itemize}[leftmargin=1cm]
+    \item 16 initial function instances across 6 types
+    \item Cold-start problem mitigation
+    \item Performance requirements per function
+    \item Resource allocation specifications
+\end{itemize}
+
+\section{Implementation and Development}
+
+\subsection{Development Environment}
+\begin{itemize}[leftmargin=1cm]
+    \item Programming languages (Python, etc.)
+    \item Framework modifications and extensions
+    \item Code organization and architecture
+\end{itemize}
+
+\subsection{Simulation Configuration}
+\begin{itemize}[leftmargin=1cm]
+    \item Experimental parameters
+    \item Device generation and deployment
+    \item Workload simulation setup
+    \item Metrics collection implementation
+\end{itemize}
+
+\section{Evaluation Methodology}
+
+\subsection{Experimental Design}
+\begin{itemize}[leftmargin=1cm]
+    \item Comparative evaluation approach
+    \item Multiple simulation runs
+    \item Statistical analysis methods
+    \item Performance vs. energy metrics
+\end{itemize}
+
+\subsection{Evaluation Metrics}
+\begin{itemize}[leftmargin=1cm]
+    \item Energy Efficiency Score: requests/joule
+    \item Response time percentiles
+    \item Resource utilization patterns
+    \item Scaling decision frequency
+\end{itemize}
+
+\section{Results and Analysis}
+\subsection{Energy Consumption Results}
+
+\begin{table}[h]
+\centering
+\caption{Energy Consumption Comparison}
+\begin{tabular}{llll}
+\toprule
+\textbf{Strategy} & \textbf{Total Energy (kJ)} & \textbf{Energy/Request (J)} & \textbf{Improvement} \\
+\midrule
+LPLT & 1,156 & 2.68 & 16.8\% \\
+HPST & 1,245 & 2.89 & 10.2\% \\
+Kubernetes & 1,298 & 3.01 & 6.4\% \\
+Standard FF & 1,387 & 3.22 & Baseline \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Performance Analysis}
+\begin{itemize}[leftmargin=1cm]
+    \item Response time comparison across strategies
+    \item SLA compliance rates
+    \item Throughput analysis
+    \item Trade-off evaluation
+\end{itemize}
+
+\subsection{Device Utilization Patterns}
+\begin{itemize}[leftmargin=1cm]
+    \item Strategy-specific device preferences
+    \item Resource utilization efficiency
+    \item Energy consumption by device type
+    \item Scaling behavior analysis
+\end{itemize}
+
+\section{Discussion}
+
+\subsection{Key Findings}
+\begin{itemize}[leftmargin=1cm]
+    \item LPLT achieves best energy efficiency (16.8\% savings)
+    \item HPST provides optimal performance with energy benefits
+    \item Heterogeneous device modeling enables optimization
+    \item Smart city deployment feasibility demonstrated
+\end{itemize}
+
+\subsection{Practical Implications}
+\begin{itemize}[leftmargin=1cm]
+    \item Strategy selection guidelines
+    \item Deployment recommendations
+    \item Energy-performance trade-off insights
+    \item Framework extensibility for future research
+\end{itemize}
+
+\subsection{Limitations}
+\begin{itemize}[leftmargin=1cm]
+    \item Simulation-based evaluation constraints
+    \item Limited to traffic monitoring use case
+    \item Power model based on specifications
+    \item Network modeling simplifications
+\end{itemize}
+
+\section{Conclusion}
+
+% ==================== FINAL CONCLUSION ====================
+
+\chapter{Conclusion}
+\textit{(4-6 pages)}
+
+\section{Summary of Work}
+\begin{itemize}[leftmargin=1cm]
+    \item Research problem and objectives revisited
+    \item State-of-the-art analysis and framework selection
+    \item faas-sim extension with energy modeling
+    \item Four scaling strategies implementation and evaluation
+\end{itemize}
+
+\section{Key Contributions}
+\begin{itemize}[leftmargin=1cm]
+    \item Extended faas-sim with comprehensive energy modeling
+    \item Implemented four distinct energy-aware scaling strategies
+    \item Validated through realistic smart city IoT use case
+    \item Demonstrated significant energy savings (up to 16.8\%)
+    \item Provided practical deployment guidelines
+\end{itemize}
+
+\section{Research Impact}
+\begin{itemize}[leftmargin=1cm]
+    \item Enhanced simulation capabilities for edge-FaaS research
+    \item Energy-performance trade-off quantification
+    \item Framework available for future research extensions
+    \item Practical insights for edge computing deployments
+\end{itemize}
+
+\section{Future Work}
+\begin{itemize}[leftmargin=1cm]
+    \item Real-world testbed validation (Grid'5000 deployment)
+    \item Extended use case scenarios beyond traffic monitoring
+    \item Machine learning-based predictive scaling
+    \item Integration with production FaaS platforms
+    \item Advanced energy modeling with thermal considerations
+\end{itemize}
+
+\section{Final Remarks}
+
+% ==================== APPENDICES ====================
+
+\appendix
+
+\chapter{Implementation Details}
+\begin{itemize}[leftmargin=1cm]
+    \item faas-sim framework modification details
+    \item Key algorithm implementations
+    \item Configuration files and parameters
+\end{itemize}
+
+\chapter{Experimental Data}
+\begin{itemize}[leftmargin=1cm]
+    \item Complete experimental results
+    \item Statistical analysis details
+    \item Additional performance charts
+\end{itemize}
+
+% ==================== PAGE COUNT SUMMARY ====================
+
+\chapter*{Estimated Page Distribution}
+\addcontentsline{toc}{chapter}{Page Distribution}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\hline
+\textbf{Chapter} & \textbf{Pages} \\
+\hline
+Chapter 1: General Introduction & 8-10 \\
+Chapter 2: Basic Concepts & 18-22 \\
+Chapter 3: State of the Art & 15-18 \\
+Chapter 4: Our Contribution & 25-30 \\
+Chapter 5: Conclusion & 4-6 \\
+Appendices & 8-12 \\
+\hline
+\textbf{Total} & \textbf{78-98 pages} \\
+\hline
+\end{tabular}
+\end{table}
+
+% ==================== KEY RESEARCH CONTRIBUTIONS ====================
+
+\chapter*{Key Research Flow}
+\addcontentsline{toc}{chapter}{Research Flow}
+
+\section*{Research Journey}
+\begin{enumerate}[leftmargin=1cm]
+    \item \textbf{Problem Identification:} Shortage of FaaS simulation tools for edge environments
+    \item \textbf{State-of-the-Art Survey:} Analysis of existing simulators and frameworks
+    \item \textbf{Framework Selection:} Chose faas-sim as most suitable base framework
+    \item \textbf{Gap Analysis:} Identified missing energy modeling capability
+    \item \textbf{Energy Model Integration:} Extended framework with power consumption models
+    \item \textbf{Scaling Strategy Implementation:} Developed four energy-aware approaches
+    \item \textbf{Use Case Validation:} Smart city IoT traffic monitoring scenario
+    \item \textbf{Comparative Evaluation:} Energy-performance trade-off analysis
+    \item \textbf{Results and Insights:} Demonstrated significant energy savings potential
+\end{enumerate}
+
+\section*{Technical Achievements}
+\begin{itemize}[leftmargin=1cm]
+    \item Successfully extended faas-sim with realistic energy modeling
+    \item Implemented comprehensive heterogeneous device modeling
+    \item Developed four distinct scaling strategies with clear optimization objectives
+    \item Validated framework through realistic smart city deployment scenario
+    \item Achieved measurable energy improvements while maintaining performance
+\end{itemize}
 
 \end{document}

@@ -1,0 +1,189 @@
+### Summary of Literature Review Report and Internship Progress
+
+#### State-of-the-Art Summary
+The literature review in the provided document evaluates several Function-as-a-Service (FaaS) simulators for edge IoT applications, focusing on their suitability for modeling resource-constrained edge environments, IoT workloads, network dynamics, and energy/cost metrics. The key simulators analyzed are:
+
+1. **MFS**: A Python-based simulator modeling Apache OpenWhisk, effective for cloud FaaS with detailed container lifecycle tracking (cold/warm starts) and CPU/RAM/GPU usage. However, it lacks energy metrics and has limited edge support, making it less suitable for IoT scenarios.
+2. **ServerlessSimPro**: A cloud-centric simulator using AzureFunctionsInvocationTrace2021, excelling in energy consumption tracking and scheduling flexibility (e.g., FirstFit, Linear Programming). Its lack of edge support limits its applicability for IoT use cases.
+3. **SimFaaS**: Supports hybrid cloud-edge environments with QoS-aware scheduling and high configurability but lacks container lifecycle and energy modeling, reducing its depth for edge IoT simulations.
+4. **CloudSimSC**: Extends CloudSim for serverless computing with flexible scheduling (Round Robin, Bin Packing) but offers limited edge support and oversimplified IoT modeling.
+5. **EdgeFaaS**: A Python-based simulator tailored for edge FaaS orchestration, supporting heterogeneous resources, dynamic failures, and energy tracking. It excels in IoT workflows but lacks detailed network modeling.
+6. **faas-sim**: A trace-driven, SimPy-based simulator optimized for edge FaaS, supporting heterogeneous devices (e.g., Raspberry Pi, Jetson), IoT workloads (e.g., AI inference), and flow-based network modeling with <7% error. It offers high configurability and comprehensive metrics (FET, resource usage, cost), making it ideal for smart city and accident prevention use cases.
+
+**Key Findings**:
+- **Edge Support**: EdgeFaaS and faas-sim are the most suitable for edge IoT due to their focus on resource-constrained nodes and IoT workloads.
+- **Energy and Cost**: ServerlessSimPro, EdgeFaaS, and faas-sim track energy effectively, with faas-sim providing implied cost metrics.
+- **Network Modeling**: faas-sim stands out for its robust flow-based network simulation, critical for edge-cloud interactions.
+- **Configurability**: ServerlessSimPro, SimFaaS, CloudSimSC, and faas-sim offer high flexibility for custom scheduling and topologies.
+- **Primary Choice**: faas-sim is the top choice due to its edge focus, trace-driven fidelity, and comprehensive metrics. EdgeFaaS is a strong secondary option for complex IoT workflows, while ServerlessSimPro is valuable for energy metrics but requires edge extensions.
+
+**FaaS and Edge Integration**:
+- **Opportunities**: Reduced latency, improved privacy, reliability, and cost savings by processing data at the edge.
+- **Challenges**: Resource constraints, heterogeneous devices, and distributed scheduling complexity.
+- **Real-World Platforms**: AWS IoT Greengrass and OpenFaaS address edge challenges through lightweight containers and flexible scheduling, respectively.
+
+**IoT Applications**:
+- **Smart Cities**: FaaS enables real-time traffic management and environmental monitoring by processing sensor data at the edge, reducing latency.
+- **Accident Prevention**: FaaS ensures low-latency, reliable processing of IoT data (e.g., vehicle proximity) for rapid alerts.
+
+**Energy and Cost**:
+- Stateless FaaS saves energy but incurs cold start delays, while stateful FaaS improves performance at higher energy costs.
+- Scheduling strategies like load-aware placement and powering down idle nodes optimize energy while maintaining performance.
+
+**Validation**: Simulators like faas-sim and EdgeFaaS support validation with real-world testbeds (e.g., Grid’5000) by comparing simulated metrics (latency, energy) with production data.
+
+#### Internship Progress
+The internship focuses on implementing and extending the faas-sim simulator for edge IoT applications, particularly smart city and accident prevention scenarios, with an emphasis on energy modeling and performance optimization.
+
+1. **Initial Setup and Challenges**:
+   - Successfully installed faas-sim, resolved dependency issues, and executed provided examples.
+   - Encountered issues with time unit inconsistencies (SimPy uses seconds, metrics in milliseconds), leading to unrealistic execution times (e.g., 0.05-0.58ms vs. expected 50-500ms for ResNet50).
+   - Low CPU utilization (0.25%) and limited scaling behavior observed initially.
+
+2. **Custom Implementations**:
+   - **Topology Development**: Created an Urban Sensing topology with 3 neighborhoods, 8 edge nodes per cell, and a cloudlet (2 servers, 1 rack), simulating a smart city environment.
+   - **Data Collection and Visualization**: Developed scripts to export metrics to CSV and visualize function execution time distributions, timelines, and wait time analyses.
+   - **Energy Modeling**: Implemented a linear power model using `PowerMetrics` and `PowerOracle` classes, integrating energy profiles from `resources.py`. Added monitoring intervals (5 seconds) for power consumption tracking.
+   - **Deployment Enhancements**: Created custom deployment classes to scale instances across smart city zones (e.g., downtown, suburb), allowing control over load distribution (RPS) and function selection.
+   - **Scheduling Improvements**: Fixed the resource monitor to track CPU, memory, GPU, and network utilization, enabling scaling. Implemented a First-Fit Bin Packing strategy, though it showed high response times with 200 devices and 1200 RPS.
+
+3. **Current Work and Issues**:
+   - Working on the `optimization-fixes-dave` branch and `raith21` example for more realistic simulations.
+   - Debugging unrealistic execution times and scaling issues (e.g., capped at 60 replicas per image).
+   - Testing energy-aware scheduling (prioritizing low-power nodes) and performance-aware Bin Packing (prioritizing low execution time).
+   - Addressing dependency conflicts and exploring integration with Grid’5000 for validation.
+
+4. **Roadmap**:
+   - Develop a more realistic energy model and integrate it deeper into faas-sim components.
+   - Validate simulations with real device data (e.g., Raspberry Pi, Jetson).
+   - Add cost estimation to compare energy-cost trade-offs across scenarios (default, intensive, distributed).
+   - Write the internship report in parallel.
+
+5. **Future Directions**:
+   - Enhance network transfer simulation and scaling behavior.
+   - Incorporate real-world traces for new devices/functions.
+   - Explore advanced scheduling strategies inspired by literature (e.g., "Energy-Aware Scheduling of MapReduce Jobs").
+   - Compare separate vs. combined sensor-edge node architectures for energy and cost efficiency.
+
+This work advances the state-of-the-art by extending faas-sim’s capabilities for energy-aware IoT simulations, addressing key gaps in edge FaaS modeling, and aligning with practical use cases like smart cities and accident prevention.
+
+
+
+
+Following the completion of the monitoring infrastructure integration, I have successfully implemented a complete scaling framework with multiple strategies tailored for heterogeneous edge environments. The work focuses on energy-performance trade-offs in Function-as-a-Service (FaaS) deployments across diverse edge devices.
+
+1. Edge Device Generator & Infrastructure Setup
+EdgeAI Device Generator (edgeai.py)
+I made a custom device generator for realistic more edge AI deployments. The key improvements include:
+
+Device Distribution Strategy:
+
+3 Intel NUC devices (2.5%) - Edge coordinators
+42 RPi devices (35%) - IoT sensors and monitoring
+18 Coral TPU devices (15%) - AI inference acceleration
+14 Nano GPU devices (12%) - GPU-based inference
+10 NX devices (8%) - High-performance AI processing
+30 RockPi devices (25%) - General compute nodes
+3 TX2 devices (2.5%) - Specialized AI workloads
+Issue Resolved: The original generator heavily favored high-performance Xeon devices (GPU/CPU) due to their lower index numbers in the generation process, causing unrealistic workload concentration on powerful cloud-like infrastructure. Our generator eliminates Xeon devices entirely and creates a edge computing environment with appropriate device heterogeneity.
+
+Rationale: This distribution reflects real-world edge AI deployments where the majority of nodes are resource-constrained devices (RPi, embedded systems) with strategic placement of specialized AI accelerators (Coral TPU, Jetson devices) for compute-intensive tasks.
+
+2. Smart City Deployment Scenarios
+Function Deployment Strategy (deployments.py)
+I implemented a smart city-focused deployment strategy with geographical distribution of function instances:
+
+"light": {
+    "resnet50-inference": 4,      # Traffic cameras, security
+    "speech-inference": 3,        # Voice kiosks, assistants
+    "resnet50-preprocessing": 1,  # Image processing pipeline
+    "resnet50-training": 2,       # Federated learning
+    "python-pi": 3,              # IoT monitoring (CPU Based)
+    "fio": 3,                    # Storage benchmarking
+    # Total: 16 initial instances
+}
+Design Decision: Each function type is deployed with initial replicas rather than starting from zero. This addresses the "cold-start" problem in constant-rate workloads where scaling decisions might not respond quickly enough to prevent initial request queuing and elevated response times.
+
+3. Scaling Architecture & Common Framework
+Base Autoscaler Pattern (base_autoscaler.py)
+I developed a common "framework" that all scaling strategies inherit from, implementing the Template Method design pattern:
+
+Core Functionality:
+
+Scaling Decision Engine - Evaluates metrics and determines scale-up/down/no-action
+Metrics Collection - Records detailed scaling decisions and performance data
+Resource Management - Handles replica lifecycle and node allocation
+Evaluation Framework - Tracks energy efficiency and performance metrics
+Data Collection: The framework automatically generates comprehensive datasets including:
+
+scaling_decisions_df - Timestamp, strategy, action, node selection, load metrics
+autoscaler_detailed_metrics_df - Response times, wait percentages, scaling triggers
+power_df & energy_df - Energy consumption and efficiency tracking
+Metrics Collector (ScalingMetricsCollector)
+Implements real-time monitoring of:
+
+Response time percentiles (95th, 99th)
+Resource utilization per node type
+Energy consumption patterns
+Scaling events
+4. Scaling Strategies Implementation
+4.1 High Performance Short Time (HPST) - "performance"
+Philosophy: Optimize total energy through execution speed - high_power × short_time
+
+Implementation Highlights:
+
+Node Selection: Prioritizes highest-performance devices (NX > NUC > Nano > RockPi)
+Device Ranking: Performance-based hierarchy with GPU acceleration preference
+Use Case: Time-critical applications where speed reduces total energy consumption
+4.2 Low Power Long Time (LPLT) - "power"
+Philosophy: Optimize total energy through device efficiency - low_power × long_time
+
+Implementation Highlights:
+
+Node Selection: Prioritizes lowest idle power devices (Coral > Nano > RPi > RockPi)
+Power Efficiency Focus: Rankings based on watts/performance ratios
+Use Case: Battery-powered edge deployments where energy conservation is critical
+4.3 Kubernetes-Style First Fit (K8s FF) - "kubernetes"
+Philosophy: Kubernetes Default Scheduler with device class awareness
+
+Implementation Highlights:
+
+Weighted Scoring: LeastRequestedPriority (6.0) + DeviceClassMatching (4.0) + BalancedResource (2.0)
+Device Class Mapping: Function requirements matched to appropriate device classes
+Kubernetes Compatibility: Mimics Kubernetes 1.26+ Dynamic Resource Allocation
+Use Case: Production baseline with intelligent device-type awareness
+4.4 Standard First Fit (Basic FF) - "basic"
+Philosophy: Simple resource-based allocation without optimization
+
+Implementation Highlights:
+
+Resource-Only Decisions: CPU/memory availability-based selection
+No Device Awareness: Treats all nodes as homogeneous
+Baseline Comparison: Control group for strategy evaluation
+Use Case: Traditional container orchestration approach
+Visualization Suite:
+The framework generates comprehensive analysis including:
+
+Scaling decision timelines with node selection rationale
+Response time evolution per function type
+Energy consumption patterns across device types
+Correlation analysis between scaling triggers and performance
+6. Current Status & Next Steps
+Completed:
+Custom edge device generator with realistic distributions
+Smart city deployment scenarios with geographic distribution
+Four distinct scaling strategies with energy-performance focus
+Comprehensive metrics collection and evaluation framework
+Automated analysis and visualization pipeline
+In Progress:
+🔄 Accurate Power Profiling - Gathering precise power consumption data for device ranking 🔄 Academic Validation - Sourcing research papers for strategy validation and benchmarking
+
+Immediate Next Steps:
+Power Profile Validation: Research and implement accurate power consumption models for:
+
+Coral TPU devices (inference vs idle power)
+Jetson family power characteristics under different workloads
+RPi power consumption patterns for IoT workloads
+Academic : Identify and adapt evaluation metrics, scaling strategies and parameters from research papers
+
+Strategy Refinement: Fine-tune thresholds and parameters based on realistic power profiles and benchmark comparisons

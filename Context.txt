@@ -1,0 +1,79 @@
+
+
+
+
+
+
+of ⁨2⁩
+
+
+
+
+Simulating FaaS applications at the Edge
+Advisors:
+– François Lemercier, IRISA, Rennes (francois.lemercier@irisa.fr)
+– Nikos Parlavantzas, IRISA, Rennes (nikos.parlavantzas@irisa.fr)
+Team: Magellan ( https://team.inria.fr/magellan/)
+Keywords: edge computing, FaaS, simulation
+Context of the internship: Serverless computing is an increasingly popular model for
+delivering cloud services [3]. Serverless isolates developers from the details of infrastructure
+management, allowing them to focus on the business logic of their applications. At the
+core of serverless is the Function-as-a-Service (FaaS) programming model. In this model,
+applications take the form of short-lived, event-triggered functions that incur costs only
+during function execution.
+Applying the FaaS model to edge computing has recently received significant interest in
+research as well as industry [2]. Edge computing refers to taking advantage of computation-
+enabled devices located at the edge of network. By allocating resources only during function
+execution, FaaS promises reduced resource consumption, which is essential for the resource-
+constrained edge nodes. Software that can be deployed at the edge may include networking
+services, such as virtual network functions (VNF). The interest of applying FaaS to network
+function virtualization (NFV) has already been identified, and research results start to
+appear on how virtualized network infrastructures can leverage FaaS [4, 1].
+A main challenge for researchers and practitioners seeking to apply the FaaS model to
+edge deployments is the shortage of simulation tools. Specifically, although there is a wide
+range of simulation tools targeting edge and fog scenarios [8], there are only a few tools
+focusing on the FaaS model [6, 7] and, in particular, on executing FaaS applications in edge
+environments [5].
+Objectives: The aim of this internship is to explore tools for simulating FaaS applica-
+tions deployed at the edge. The intern will first study the state-of-the-art in simulation
+frameworks for such environments. The intern will then select an existing framework and
+apply it to simulate the execution of an IoT application at the edge, potentially including
+serverless VNFs. The simulation will be validated using a real IoT application deployed on
+the Grid’5000 testbed. Finally, the intern will perform simulation experiments in order to
+evaluate the benefits of applying the serverless paradigm to a representative use case.
+Skills: Good knowledge of distributed systems. Good programming skills (e.g., Java and
+1
+Python). Basic knowledge of simulation.
+References
+[1] Paarijaat Aditya, Istemi Ekin Akkus, Andre Beck, Ruichuan Chen, Volker Hilt, Ivica
+Rimac, Klaus Satzke, and Manuel Stein. Will serverless computing revolutionize nfv?
+Proceedings of the IEEE, 107(4):667–678, 2019.
+[2] Mohammad S. Aslanpour, Adel N. Toosi, Claudio Cicconetti, Bahman Javadi, Peter
+Sbarski, Davide Taibi, Marcos Assuncao, Sukhpal Singh Gill, Raj Gaire, and Schahram
+Dustdar. Serverless edge computing: Vision and challenges. In 2021 Australasian Com-
+puter Science Week Multiconference, ACSW ’21, New York, NY, USA, 2021. Association
+for Computing Machinery.
+[3] Ioana Baldini, Paul Castro, Kerry Chang, Perry Cheng, Stephen Fink, Vatche Ishakian,
+Nick Mitchell, Vinod Muthusamy, Rodric Rabbah, Aleksander Slominski, and Philippe
+Suter. Serverless Computing: Current Trends and Open Problems, pages 1–20. Springer
+Singapore, Singapore, 2017.
+[4] Saqib Rasool Chaudhry, Andrei Palade, Aqeel Kazmi, and Siobhán Clarke. Improved
+qos at the edge using serverless computing to deploy virtual network functions. IEEE
+Internet of Things Journal, 7(10):10673–10683, 2020.
+[5] Hongseok Jeon, Chunglae Cho, Seungjae Shin, and Seunghyun Yoon. A cloudsim-
+extension for simulating distributed functions-as-a-service. In 2019 20th International
+Conference on Parallel and Distributed Computing, Applications and Technologies (PD-
+CAT), pages 386–391, 2019.
+[6] Nima Mahmoudi and Hamzeh Khazaei. Simfaas: A performance simulator for server-
+less computing platforms. In Markus Helfert, Donald Ferguson, and Claus Pahl, editors,
+Proceedings of the 11th International Conference on Cloud Computing and Services Sci-
+ence, CLOSER 2021, Online Streaming, April 28-30, 2021, pages 23–33. SCITEPRESS,
+2021.
+[7] Anja Reuter, Timon Back, and Vasilios Andrikopoulos. Cost efficiency under mixed
+serverless and serverful deployments. In 2020 46th Euromicro Conference on Software
+Engineering and Advanced Applications (SEAA), pages 242–245, 2020.
+[8] Sergej Svorobej, Patricia Takako Endo, Malika Bendechache, Christos Filelis-
+Papadopoulos, Konstantinos M. Giannoutakis, George A. Gravvanis, Dimitrios Tzo-
+varas, James Byrne, and Theo Lynn. Simulating fog and edge computing scenarios: An
+overview and research challenges. Future Internet, 11(3), 2019.
+2

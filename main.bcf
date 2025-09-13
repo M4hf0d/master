@@ -2373,6 +2373,11 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliography/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">baldini2017serverless</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">aslanpour2021serverless</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">svorobej2019simulating</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">mahmoudi2021simfaas</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">jeon2019cloudsim</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

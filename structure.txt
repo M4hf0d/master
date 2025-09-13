@@ -1,0 +1,78 @@
+1 General Introduction 10
+1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+1.2 Objective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+1.3 Thesis Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2 Basic Concepts 14
+2.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.2 Edge Computing Fundamentals . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.2.1 Definition and Characteristics . . . . . . . . . . . . . . . . . . . . . 15
+2.2.2 Edge Computing Architecture . . . . . . . . . . . . . . . . . . . . . 15
+2.2.3 Edge vs Cloud Computing Trade-offs . . . . . . . . . . . . . . . . . 15
+2.2.4 Resource Constraints in Edge Environments . . . . . . . . . . . . . 15
+2.3 Function-as-a-Service (FaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.3.1 Serverless Computing Model . . . . . . . . . . . . . . . . . . . . . . 15
+2.3.2 FaaS Architecture and Characteristics . . . . . . . . . . . . . . . . 15
+2.3.3 Container Lifecycle Management . . . . . . . . . . . . . . . . . . . 15
+2.3.4 Cold Start and Warm Start Mechanisms . . . . . . . . . . . . . . . 15
+2.4 Faas-sim Integration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.4.1 Opportunities in Faas-sim Convergence . . . . . . . . . . . . . . . . 15
+2.4.2 Challenges in Faas-sim Deployments . . . . . . . . . . . . . . . . . 15
+2.4.3 Heterogeneous Device Management . . . . . . . . . . . . . . . . . . 15
+2.4.4 Network Dynamics and Latency Considerations . . . . . . . . . . . 15
+2.5 Internet of Things (IoT) and Smart Cities . . . . . . . . . . . . . . . . . . 15
+2.5.1 IoT Architecture and Communication Models . . . . . . . . . . . . 15
+2.5.2 Smart City Applications and Use Cases . . . . . . . . . . . . . . . . 15
+2.5.3 IoT Workload Characteristics . . . . . . . . . . . . . . . . . . . . . 15
+2.5.4 Real-time Processing Requirements . . . . . . . . . . . . . . . . . . 15
+2.6 Simulation and Modeling Principles . . . . . . . . . . . . . . . . . . . . . . 15
+2.6.1 Discrete Event Simulation . . . . . . . . . . . . . . . . . . . . . . . 15
+2.6.2 Trace-driven vs Model-driven Approaches . . . . . . . . . . . . . . 15
+2.6.3 Performance Metrics and Validation . . . . . . . . . . . . . . . . . . 15
+2.7 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3 State of the Art 34
+3.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.2 FaaS Simulation Frameworks . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.2.1 Cloud-Centric FaaS Simulators . . . . . . . . . . . . . . . . . . . . 35
+3.2.2 Edge-Oriented FaaS Simulators . . . . . . . . . . . . . . . . . . . . 35
+1
+3.3 Comparative Analysis Framework . . . . . . . . . . . . . . . . . . . . . . . 35
+3.3.1 Evaluation Criteria Definition . . . . . . . . . . . . . . . . . . . . . 35
+3.3.2 Simulator Assessment Methodology . . . . . . . . . . . . . . . . . . 35
+3.4 Simulator Evaluation Results . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.4.1 Cloud-Centric Simulator Analysis . . . . . . . . . . . . . . . . . . . 35
+3.4.2 Edge-Oriented Simulator Analysis . . . . . . . . . . . . . . . . . . . 35
+3.5 Smart City IoT Applications in FaaS-Sim . . . . . . . . . . . . . . . . . . . 35
+3.5.1 Traffic Management and Monitoring . . . . . . . . . . . . . . . . . 35
+3.5.2 Environmental Sensing and Analytics . . . . . . . . . . . . . . . . . 35
+3.5.3 Public Safety and Emergency Response . . . . . . . . . . . . . . . . 35
+3.5.4 Accident Prevention Systems . . . . . . . . . . . . . . . . . . . . . 35
+3.6 FaaS-Sim Research Landscape . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.6.1 Distributed Scheduling Challenges . . . . . . . . . . . . . . . . . . . 35
+3.6.2 Container Orchestration at the Edge . . . . . . . . . . . . . . . . . 35
+3.6.3 QoS and SLA Management . . . . . . . . . . . . . . . . . . . . . . 35
+3.6.4 Heterogeneous Resource Management . . . . . . . . . . . . . . . . . 35
+3.7 Synthesis and Research Gaps . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.7.1 Simulator Capability Matrix . . . . . . . . . . . . . . . . . . . . . . 35
+3.7.2 Identified Research Gaps . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.7.3 Smart City Simulation Requirements . . . . . . . . . . . . . . . . . 35
+3.8 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3.8.1 Simulator Selection Rationale . . . . . . . . . . . . . . . . . . . . . 35
+3.8.2 faas-sim as Primary Choice . . . . . . . . . . . . . . . . . . . . . . 35
+3.8.3 Limitations and Future Needs . . . . . . . . . . . . . . . . . . . . . 35
+3.9 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+4 Conclusion 66
+4.1 Research Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+4.2 Key Findings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+4.2.1 Simulator Comparison Results . . . . . . . . . . . . . . . . . . . . . 66
+4.2.2 FaaS-Sim Simulation Challenges . . . . . . . . . . . . . . . . . . . . 66
+4.2.3 Smart City Application Requirements . . . . . . . . . . . . . . . . . 66
+4.3 Research Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+4.3.1 Comprehensive Simulator Evaluation . . . . . . . . . . . . . . . . . 66
+4.3.2 FaaS-Sim Modeling Framework . . . . . . . . . . . . . . . . . . . . 66
+4.3.3 Smart City Use Case Analysis . . . . . . . . . . . . . . . . . . . . . 66
+4.4 Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+4.5 Future Research Directions . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+4.5.1 Advanced FaaS-Sim Simulation Models . . . . . . . . . . . . . . . . 66
+4.5.2 Real-world Validation Studies . . . . . . . . . . . . . . . . . . . . . 66
+4.5.3 Extended Smart City Scenarios . . . . . . . . . . . . . . . . . . . . 66
+4.6 Closing Remarks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66

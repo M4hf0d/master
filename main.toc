@@ -1,65 +1,14 @@
-\contentsline {chapter}{\numberline {1}General Introduction}{3}{}%
-\contentsline {section}{\numberline {1.1}Introduction}{3}{}%
-\contentsline {section}{\numberline {1.2}Objective}{3}{}%
-\contentsline {section}{\numberline {1.3}Dissertation Structure}{3}{}%
-\contentsline {chapter}{\numberline {2}Basic Concepts}{4}{}%
-\contentsline {section}{\numberline {2.1}Introduction}{4}{}%
-\contentsline {section}{\numberline {2.2}Edge Computing Fundamentals}{4}{}%
-\contentsline {section}{\numberline {2.3}Serverless Computing and FaaS}{4}{}%
-\contentsline {section}{\numberline {2.4}FaaS at the Edge}{4}{}%
-\contentsline {section}{\numberline {2.5}Heterogeneous Edge Devices}{5}{}%
-\contentsline {section}{\numberline {2.6}Energy Models and Optimization}{5}{}%
-\contentsline {section}{\numberline {2.7}Autoscaling and Resource Management}{5}{}%
-\contentsline {section}{\numberline {2.8}IoT Applications and Smart Cities}{5}{}%
-\contentsline {section}{\numberline {2.9}Conclusion}{5}{}%
-\contentsline {chapter}{\numberline {3}State of the Art}{6}{}%
-\contentsline {section}{\numberline {3.1}Introduction}{6}{}%
-\contentsline {section}{\numberline {3.2}Edge Computing Simulation Tools}{6}{}%
-\contentsline {section}{\numberline {3.3}FaaS Simulation Frameworks}{6}{}%
-\contentsline {section}{\numberline {3.4}Edge-FaaS Simulation Tools}{6}{}%
-\contentsline {section}{\numberline {3.5}Energy-Aware Computing Approaches}{7}{}%
-\contentsline {section}{\numberline {3.6}Research Gap Analysis}{7}{}%
-\contentsline {section}{\numberline {3.7}Framework Selection Justification}{7}{}%
-\contentsline {section}{\numberline {3.8}Conclusion}{7}{}%
-\contentsline {chapter}{\numberline {4}Our Contribution}{8}{}%
-\contentsline {section}{\numberline {4.1}Introduction}{8}{}%
-\contentsline {section}{\numberline {4.2}Framework Architecture and Extensions}{8}{}%
-\contentsline {subsection}{\numberline {4.2.1}faas-sim Framework Analysis}{8}{}%
-\contentsline {subsection}{\numberline {4.2.2}Energy Model Integration}{8}{}%
-\contentsline {section}{\numberline {4.3}Heterogeneous Edge Device Modeling}{8}{}%
-\contentsline {subsection}{\numberline {4.3.1}Device Distribution Strategy}{8}{}%
-\contentsline {subsection}{\numberline {4.3.2}Power Consumption Implementation}{8}{}%
-\contentsline {section}{\numberline {4.4}Energy-Aware Scaling Strategies}{9}{}%
-\contentsline {subsection}{\numberline {4.4.1}Base Autoscaler Framework}{9}{}%
-\contentsline {subsection}{\numberline {4.4.2}High Performance Short Time (HPST)}{9}{}%
-\contentsline {subsection}{\numberline {4.4.3}Low Power Long Time (LPLT)}{9}{}%
-\contentsline {subsection}{\numberline {4.4.4}Kubernetes-Style First Fit}{10}{}%
-\contentsline {subsection}{\numberline {4.4.5}Standard First Fit (Baseline)}{10}{}%
-\contentsline {section}{\numberline {4.5}Smart City Use Case Implementation}{10}{}%
-\contentsline {subsection}{\numberline {4.5.1}IoT Traffic Monitoring Scenario}{10}{}%
-\contentsline {subsection}{\numberline {4.5.2}Function Deployment Configuration}{10}{}%
-\contentsline {section}{\numberline {4.6}Implementation and Development}{10}{}%
-\contentsline {subsection}{\numberline {4.6.1}Development Environment}{10}{}%
-\contentsline {subsection}{\numberline {4.6.2}Simulation Configuration}{11}{}%
-\contentsline {section}{\numberline {4.7}Evaluation Methodology}{11}{}%
-\contentsline {subsection}{\numberline {4.7.1}Experimental Design}{11}{}%
-\contentsline {subsection}{\numberline {4.7.2}Evaluation Metrics}{11}{}%
-\contentsline {section}{\numberline {4.8}Results and Analysis}{11}{}%
-\contentsline {subsection}{\numberline {4.8.1}Energy Consumption Results}{11}{}%
-\contentsline {subsection}{\numberline {4.8.2}Performance Analysis}{12}{}%
-\contentsline {subsection}{\numberline {4.8.3}Device Utilization Patterns}{12}{}%
-\contentsline {section}{\numberline {4.9}Discussion}{12}{}%
-\contentsline {subsection}{\numberline {4.9.1}Key Findings}{12}{}%
-\contentsline {subsection}{\numberline {4.9.2}Practical Implications}{12}{}%
-\contentsline {subsection}{\numberline {4.9.3}Limitations}{12}{}%
-\contentsline {section}{\numberline {4.10}Conclusion}{12}{}%
-\contentsline {chapter}{\numberline {5}Conclusion}{13}{}%
-\contentsline {section}{\numberline {5.1}Summary of Work}{13}{}%
-\contentsline {section}{\numberline {5.2}Key Contributions}{13}{}%
-\contentsline {section}{\numberline {5.3}Research Impact}{13}{}%
-\contentsline {section}{\numberline {5.4}Future Work}{14}{}%
-\contentsline {section}{\numberline {5.5}Final Remarks}{14}{}%
-\contentsline {chapter}{\numberline {A}Implementation Details}{15}{}%
-\contentsline {chapter}{\numberline {B}Experimental Data}{16}{}%
-\contentsline {chapter}{Page Distribution}{17}{}%
-\contentsline {chapter}{Research Flow}{18}{}%
+\xpg@aux {}{english}
+\contentsline {chapter}{\numberline {1}General Introduction}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objective}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis Structure}{7}{section.1.3}%
+\contentsline {part}{I\hspace {1em}Background}{9}{part.1}%
+\contentsline {chapter}{\numberline {2}Chapter Title}{10}{chapter.2}%
+\contentsline {part}{II\hspace {1em}Implementation}{11}{part.2}%
+\contentsline {chapter}{\numberline {3}Chapter Title}{12}{chapter.3}%
+\contentsline {part}{III\hspace {1em}Results}{13}{part.3}%
+\contentsline {chapter}{\numberline {4}Chapter Title}{14}{chapter.4}%
+\contentsline {part}{IV\hspace {1em}Conclusion}{15}{part.4}%
+\contentsline {chapter}{\numberline {5}Chapter Title}{16}{chapter.5}%
+\contentsline {part}{V\hspace {1em}Bibliography}{17}{part.5}%

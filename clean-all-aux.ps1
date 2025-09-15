@@ -1,5 +1,16 @@
 # PowerShell script to completely clean ALL LaTeX auxiliary files
-# Run this for a complete clean build (removes everything including TOC, bibliography, etc.)
+# WARNING: Use this ONLY when you want to start completely fresh
+# This will break bibliography citations until you run the full compilation sequence:
+# pdflatex → biber → pdflatex → pdflatex
+
+Write-Host "WARNING: This will remove ALL auxiliary files including bibliography!" -ForegroundColor Red
+Write-Host "Your citations will be undefined until you run biber!" -ForegroundColor Red
+$confirm = Read-Host "Are you sure you want to proceed? (y/N)"
+
+if ($confirm -ne "y" -and $confirm -ne "Y") {
+    Write-Host "Operation cancelled." -ForegroundColor Green
+    exit
+}
 
 Write-Host "Performing COMPLETE cleanup of LaTeX auxiliary files..." -ForegroundColor Red
 

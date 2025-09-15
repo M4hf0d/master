@@ -62,7 +62,7 @@
             ]
         }
     ],
-    "latex-workshop.latex.recipe.default": "xelatex (TeX Live) + cleanup",
+    "latex-workshop.latex.recipe.default": "xelatex ➞ biber ➞ xelatex × 2 (TeX Live)",
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.formatting.bibtex": "texfmt",
     "latex-workshop.formatting.latexindent.args": [

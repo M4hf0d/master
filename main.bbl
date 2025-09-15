@@ -1,0 +1,724 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{aslanpour2021serverless}{inproceedings}{}{}
+      \name{author}{10}{}{%
+        {{hash=96d9e82c79400a70ffd0a06acbe97499}{%
+           family={Aslanpour},
+           familyi={A\bibinitperiod},
+           given={Mohammad\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b42c42dd188f7eb16e8448ff15448ba7}{%
+           family={Toosi},
+           familyi={T\bibinitperiod},
+           given={Adel\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=949784ec7bd748cd723ddf24fd56912b}{%
+           family={Cicconetti},
+           familyi={C\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=abb15747d2fd60bea22df117a3eae3d2}{%
+           family={Javadi},
+           familyi={J\bibinitperiod},
+           given={Bahman},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5343c9b66101b8cbe13991de0ab40060}{%
+           family={Sbarski},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4d08ae1a3f71e9cc303d7cc0722f5186}{%
+           family={Taibi},
+           familyi={T\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=211cd38dcba0516a37fff827d3f27645}{%
+           family={Assuncao},
+           familyi={A\bibinitperiod},
+           given={Marcos},
+           giveni={M\bibinitperiod}}}%
+        {{hash=92dec359375c7439237c384d8cec2240}{%
+           family={Gill},
+           familyi={G\bibinitperiod},
+           given={Sukhpal\bibnamedelima Singh},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c65ff22a475f7058e11af0ead67bbe92}{%
+           family={Gaire},
+           familyi={G\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod}}}%
+        {{hash=748d3aa7019baff9dd392f0f9e793368}{%
+           family={Dustdar},
+           familyi={D\bibinitperiod},
+           given={Schahram},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b466189ce87573ad0d038c2775f02daa}
+      \strng{fullhash}{c29edf49ba6ac0115d9e950307ad5c10}
+      \strng{fullhashraw}{c29edf49ba6ac0115d9e950307ad5c10}
+      \strng{bibnamehash}{b466189ce87573ad0d038c2775f02daa}
+      \strng{authorbibnamehash}{b466189ce87573ad0d038c2775f02daa}
+      \strng{authornamehash}{b466189ce87573ad0d038c2775f02daa}
+      \strng{authorfullhash}{c29edf49ba6ac0115d9e950307ad5c10}
+      \strng{authorfullhashraw}{c29edf49ba6ac0115d9e950307ad5c10}
+      \field{labelalpha}{Asl+21}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 Australasian Computer Science Week Multiconference}
+      \field{series}{ACSW '21}
+      \field{title}{Serverless edge computing: Vision and challenges}
+      \field{year}{2021}
+    \endentry
+    \entry{baldini2017serverless}{incollection}{}{}
+      \name{author}{11}{}{%
+        {{hash=718c76c6513613dc35d9b6e0cbfb7e5f}{%
+           family={Baldini},
+           familyi={B\bibinitperiod},
+           given={Ioana},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40b283e6fd979b6dd5f1b44c51d3c22a}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c87b897fab7ec4bc6fe221bbd62c25ad}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Kerry},
+           giveni={K\bibinitperiod}}}%
+        {{hash=446968efc2eca53dc1d9be92ac1c6125}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Perry},
+           giveni={P\bibinitperiod}}}%
+        {{hash=50a4bb69260558bbaa12dacce37aa5b7}{%
+           family={Fink},
+           familyi={F\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dd23ef8017bbe3559acf3ff8e4343af9}{%
+           family={Ishakian},
+           familyi={I\bibinitperiod},
+           given={Vatche},
+           giveni={V\bibinitperiod}}}%
+        {{hash=db137b3ff914ecf1c85c50cc9a6cd531}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e67440e54a895e8bc7a482305017edbf}{%
+           family={Muthusamy},
+           familyi={M\bibinitperiod},
+           given={Vinod},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d162627d3bf87f2bc8f977376dfa7d0b}{%
+           family={Rabbah},
+           familyi={R\bibinitperiod},
+           given={Rodric},
+           giveni={R\bibinitperiod}}}%
+        {{hash=62d7bc22cbac7e9404d8d38b1b378c33}{%
+           family={Slominski},
+           familyi={S\bibinitperiod},
+           given={Aleksander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cbf7d8baeae2b9414ff350dbcace7db6}{%
+           family={Suter},
+           familyi={S\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Springer Singapore}%
+      }
+      \strng{namehash}{f71110623500f61889ddf91b8e163276}
+      \strng{fullhash}{d36c80dc570f2467fb4279b0b536db45}
+      \strng{fullhashraw}{d36c80dc570f2467fb4279b0b536db45}
+      \strng{bibnamehash}{f71110623500f61889ddf91b8e163276}
+      \strng{authorbibnamehash}{f71110623500f61889ddf91b8e163276}
+      \strng{authornamehash}{f71110623500f61889ddf91b8e163276}
+      \strng{authorfullhash}{d36c80dc570f2467fb4279b0b536db45}
+      \strng{authorfullhashraw}{d36c80dc570f2467fb4279b0b536db45}
+      \field{labelalpha}{Bal+17}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Serverless Computing: Current Trends and Open Problems}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{belcastro2023edge}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=60a33fbbef539963774f7becc4924920}{%
+           family={Belcastro},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1a055736a28147c7692d211ddb2a3f44}{%
+           family={Marozzo},
+           familyi={M\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c081f7eefcdb71b8a4126ca5b05a26ae}{%
+           family={Orsino},
+           familyi={O\bibinitperiod},
+           given={Alessio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9f3f9c5f8f2dac399677e6a768ecb9c3}{%
+           family={Talia},
+           familyi={T\bibinitperiod},
+           given={Domenico},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c07607f570e8e69481ca82ca77bab395}{%
+           family={Trunfio},
+           familyi={T\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccc5ab22fbc5f7f19bfeb02ea47c996a}
+      \strng{fullhash}{18812fc86bf1a8b67819a03b5ac0dbf2}
+      \strng{fullhashraw}{18812fc86bf1a8b67819a03b5ac0dbf2}
+      \strng{bibnamehash}{ccc5ab22fbc5f7f19bfeb02ea47c996a}
+      \strng{authorbibnamehash}{ccc5ab22fbc5f7f19bfeb02ea47c996a}
+      \strng{authornamehash}{ccc5ab22fbc5f7f19bfeb02ea47c996a}
+      \strng{authorfullhash}{18812fc86bf1a8b67819a03b5ac0dbf2}
+      \strng{authorfullhashraw}{18812fc86bf1a8b67819a03b5ac0dbf2}
+      \field{labelalpha}{Bel+23}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{month}{04}
+      \field{title}{Edge-Cloud Continuum Solutions for Urban Mobility Prediction and Planning}
+      \field{volume}{11}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2023.3267471
+      \endverb
+    \endentry
+    \entry{bermbach2019mfs}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ac736996e5adb99fb815536ffee92db5}{%
+           family={Bermbach},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d0e8b14a4e4b668d18827aa2c0fcee6f}{%
+           family={Wittern},
+           familyi={W\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=748d3aa7019baff9dd392f0f9e793368}{%
+           family={Dustdar},
+           familyi={D\bibinitperiod},
+           given={Schahram},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{fullhash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{fullhashraw}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{bibnamehash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{authorbibnamehash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{authornamehash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{authorfullhash}{19cb77bff8de509e20b7b0d6a8265433}
+      \strng{authorfullhashraw}{19cb77bff8de509e20b7b0d6a8265433}
+      \field{labelalpha}{BWD19}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 12th IEEE/ACM International Conference on Utility and Cloud Computing}
+      \field{title}{MFS: Multi-tier FaaS Simulator for Edge-Cloud Computing}
+      \field{year}{2019}
+      \field{pages}{139\bibrangedash 148}
+      \range{pages}{10}
+    \endentry
+    \entry{boughzala2022faassim}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=f284708f7cf6955543d54ccd12b58869}{%
+           family={Boughzala},
+           familyi={B\bibinitperiod},
+           given={Ameni},
+           giveni={A\bibinitperiod}}}%
+        {{hash=de8192163e1958a4e965012aafc1d587}{%
+           family={Mathieu},
+           familyi={M\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=33426448932f47b014c193edf5b02cb3}{%
+           family={Lebre},
+           familyi={L\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{248f670c475cbf6b6136becba514aed8}
+      \strng{fullhash}{248f670c475cbf6b6136becba514aed8}
+      \strng{fullhashraw}{248f670c475cbf6b6136becba514aed8}
+      \strng{bibnamehash}{248f670c475cbf6b6136becba514aed8}
+      \strng{authorbibnamehash}{248f670c475cbf6b6136becba514aed8}
+      \strng{authornamehash}{248f670c475cbf6b6136becba514aed8}
+      \strng{authorfullhash}{248f670c475cbf6b6136becba514aed8}
+      \strng{authorfullhashraw}{248f670c475cbf6b6136becba514aed8}
+      \field{labelalpha}{BML22}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 15th IEEE International Conference on Cloud Computing}
+      \field{title}{faas-sim: A Trace-driven Simulation Framework for Serverless Edge Computing Platforms}
+      \field{year}{2022}
+      \field{pages}{711\bibrangedash 720}
+      \range{pages}{10}
+    \endentry
+    \entry{das2022serverlesssimpro}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a065b35a8f55cb48196cfabb310dbc7c}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Anupama},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1c7e237e58ca45eae14848b8c375a7a1}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Stacy},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0f3679f6a9b7ddc33bfd3a42e3f26fe3}{%
+           family={Wittie},
+           familyi={W\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{fullhash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{fullhashraw}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{bibnamehash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{authorbibnamehash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{authornamehash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{authorfullhash}{83600554b0ae841c36a51ddd3bcc6c14}
+      \strng{authorfullhashraw}{83600554b0ae841c36a51ddd3bcc6c14}
+      \field{labelalpha}{DPW22}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Modeling and Computer Simulation}
+      \field{number}{4}
+      \field{title}{ServerlessSimPro: A Comprehensive Serverless Computing Simulation Framework}
+      \field{volume}{32}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 35}
+      \range{pages}{35}
+    \endentry
+    \entry{jin2019when}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=1d2adb233db4813602937997f607eeff}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Runyu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2104afca07c7c67e7e0c66f22d3a3aa2}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Qirui},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=c7a7a826b23381cf98a59161f42cf24e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{fullhash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{fullhashraw}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{bibnamehash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{authorbibnamehash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{authornamehash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{authorfullhash}{315fdc7fd1cf3058c7b05813415141cf}
+      \strng{authorfullhashraw}{315fdc7fd1cf3058c7b05813415141cf}
+      \field{labelalpha}{JYZ19}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DC}
+      \field{eprinttype}{arXiv}
+      \field{note}{Submitted on 29 Jun 2023}
+      \field{title}{When Edge Meets FaaS: Opportunities and Challenges}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.48550/arXiv.2307.06397
+      \endverb
+      \verb{eprint}
+      \verb 2307.06397
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2307.06397
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2307.06397
+      \endverb
+    \endentry
+    \entry{li2022edgefaas}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=02821a48003406ef06e1ee4dfa9fca52}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b05a15250c64840734f77dcbe7f6ac97}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4622823528906a7f86a323f6f41fd33e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=873019c79a0f3cddb4fc1ca5e24bf341}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
+      \strng{fullhash}{0bc5dde1f15808b93c388d7443045c31}
+      \strng{fullhashraw}{0bc5dde1f15808b93c388d7443045c31}
+      \strng{bibnamehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
+      \strng{authorbibnamehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
+      \strng{authornamehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
+      \strng{authorfullhash}{0bc5dde1f15808b93c388d7443045c31}
+      \strng{authorfullhashraw}{0bc5dde1f15808b93c388d7443045c31}
+      \field{labelalpha}{Li+22}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Future Generation Computer Systems}
+      \field{title}{EdgeFaaS: A Simulation Framework for Edge Function-as-a-Service Orchestration}
+      \field{volume}{135}
+      \field{year}{2022}
+      \field{pages}{274\bibrangedash 285}
+      \range{pages}{12}
+    \endentry
+    \entry{mahmoudi2021simfaas}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=831cced26a59f9f179d25f98d94db277}{%
+           family={Mahmoudi},
+           familyi={M\bibinitperiod},
+           given={Nima},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6399bf16a9af647f1989264cba981682}{%
+           family={Khazaei},
+           familyi={K\bibinitperiod},
+           given={Hamzeh},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online Streaming}%
+      }
+      \list{publisher}{1}{%
+        {SCITEPRESS}%
+      }
+      \strng{namehash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{fullhash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{fullhashraw}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{bibnamehash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{authorbibnamehash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{authornamehash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{authorfullhash}{c96e183f40ed069f3a8248d7636a0732}
+      \strng{authorfullhashraw}{c96e183f40ed069f3a8248d7636a0732}
+      \field{labelalpha}{MK21}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 11th International Conference on Cloud Computing and Services Science}
+      \field{series}{CLOSER 2021}
+      \field{title}{SimFaaS: A performance simulator for serverless computing platforms}
+      \field{year}{2021}
+      \field{pages}{23\bibrangedash 33}
+      \range{pages}{11}
+    \endentry
+    \entry{mampage2021cloudsimsc}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=9e85b734273526e4471885f3d9409396}{%
+           family={Mampage},
+           familyi={M\bibinitperiod},
+           given={Anupama},
+           giveni={A\bibinitperiod}}}%
+        {{hash=029e03ba4e08a5605b31a31f86375741}{%
+           family={Buyya},
+           familyi={B\bibinitperiod},
+           given={Rajkumar},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Melbourne, VIC, Australia}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{fullhash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{fullhashraw}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{bibnamehash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{authorbibnamehash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{authornamehash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{authorfullhash}{5b03fed935fed547fac9be2fbbd6893b}
+      \strng{authorfullhashraw}{5b03fed935fed547fac9be2fbbd6893b}
+      \field{labelalpha}{MB21}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 21st IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGrid)}
+      \field{title}{CloudSimSC: A Toolkit for Modeling and Simulation of Serverless Computing Environments}
+      \field{year}{2021}
+      \field{pages}{230\bibrangedash 241}
+      \range{pages}{12}
+    \endentry
+    \entry{mampage2021holistic}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9e85b734273526e4471885f3d9409396}{%
+           family={Mampage},
+           familyi={M\bibinitperiod},
+           given={Anupama},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a2e9731f57f67457354b0bf748912612}{%
+           family={Karunasekera},
+           familyi={K\bibinitperiod},
+           given={Shanika},
+           giveni={S\bibinitperiod}}}%
+        {{hash=029e03ba4e08a5605b31a31f86375741}{%
+           family={Buyya},
+           familyi={B\bibinitperiod},
+           given={Rajkumar},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{fullhash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{fullhashraw}{c38f181471793981dda34c44e02f7ed9}
+      \strng{bibnamehash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{authorbibnamehash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{authornamehash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{authorfullhash}{c38f181471793981dda34c44e02f7ed9}
+      \strng{authorfullhashraw}{c38f181471793981dda34c44e02f7ed9}
+      \field{labelalpha}{MKB21}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{A Holistic View on Resource Management in Serverless Computing Environments: Taxonomy, and Future Directions}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.48550/arXiv.2105.11592
+      \endverb
+    \endentry
+    \entry{moreno2023latency}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d655ab1396c01b593910bede0a6460d4}{%
+           family={Moreno-Vozmediano},
+           familyi={M\bibinithyphendelim V\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1467729635943c7a6af2c4492fabc2ee}{%
+           family={Huedo},
+           familyi={H\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7336d5c087fd20b5d8d4f0b018fad80d}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Rubén},
+           giveni={R\bibinitperiod}}}%
+        {{hash=58613be0598261cfe255fcdfc34b3ae1}{%
+           family={Llorente},
+           familyi={L\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{e65aba8eb4ab1a7a903e266e45dc43cc}
+      \strng{fullhash}{5a7a69d63c9dd3a07c1d496fe0f7f421}
+      \strng{fullhashraw}{5a7a69d63c9dd3a07c1d496fe0f7f421}
+      \strng{bibnamehash}{e65aba8eb4ab1a7a903e266e45dc43cc}
+      \strng{authorbibnamehash}{e65aba8eb4ab1a7a903e266e45dc43cc}
+      \strng{authornamehash}{e65aba8eb4ab1a7a903e266e45dc43cc}
+      \strng{authorfullhash}{5a7a69d63c9dd3a07c1d496fe0f7f421}
+      \strng{authorfullhashraw}{5a7a69d63c9dd3a07c1d496fe0f7f421}
+      \field{labelalpha}{Mor+23}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cloud Computing}
+      \field{month}{07}
+      \field{title}{Latency and resource consumption analysis for serverless edge analytics}
+      \field{volume}{12}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1186/s13677-023-00485-9
+      \endverb
+    \endentry
+    \entry{svorobej2019simulating}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=0909021e0d6d8c6ce494dc80872f8d50}{%
+           family={Svorobej},
+           familyi={S\bibinitperiod},
+           given={Sergej},
+           giveni={S\bibinitperiod}}}%
+        {{hash=02044f0f465eacfba7eb54039c7f15d9}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Patricia\bibnamedelima Takako},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=cc1c8a1ae9b8cf5def47a679c8eeddde}{%
+           family={Bendechache},
+           familyi={B\bibinitperiod},
+           given={Malika},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3e41b97744a8c2942bcc4eb3d04127ce}{%
+           family={Filelis-Papadopoulos},
+           familyi={F\bibinithyphendelim P\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8fbe0f35c465ba7293d44668ac84cdcc}{%
+           family={Giannoutakis},
+           familyi={G\bibinitperiod},
+           given={Konstantinos\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=65aa55ca03f98eda9f3bd13eee4014a1}{%
+           family={Gravvanis},
+           familyi={G\bibinitperiod},
+           given={George\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5e944e52e93899644dffcd6cf718da88}{%
+           family={Tzovaras},
+           familyi={T\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=772a87c7fb690fc9608b1dac3429ba74}{%
+           family={Byrne},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7f80a976314f2146e2c8a416dde4d244}{%
+           family={Lynn},
+           familyi={L\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc3dc941c647dfc72267bb1d4a5f72b0}
+      \strng{fullhash}{0d87b8a46266b4ccaafa4649e3238dd7}
+      \strng{fullhashraw}{0d87b8a46266b4ccaafa4649e3238dd7}
+      \strng{bibnamehash}{cc3dc941c647dfc72267bb1d4a5f72b0}
+      \strng{authorbibnamehash}{cc3dc941c647dfc72267bb1d4a5f72b0}
+      \strng{authornamehash}{cc3dc941c647dfc72267bb1d4a5f72b0}
+      \strng{authorfullhash}{0d87b8a46266b4ccaafa4649e3238dd7}
+      \strng{authorfullhashraw}{0d87b8a46266b4ccaafa4649e3238dd7}
+      \field{labelalpha}{Svo+19}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Future Internet}
+      \field{number}{3}
+      \field{title}{Simulating fog and edge computing scenarios: An overview and research challenges}
+      \field{volume}{11}
+      \field{year}{2019}
+    \endentry
+    \entry{wang2021edgeserve}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dbe83fd8da75338203d4e8dd0e20be17}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9a4f4a1ff661cd600eb26523a5ba8bb4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4d9fbc50e12486f11ef599cf2f3ffe11}{%
+           family={Vasilakos},
+           familyi={V\bibinitperiod},
+           given={Athanasios\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{fullhash}{19de595fe7fe809a0e787dee64046c21}
+      \strng{fullhashraw}{19de595fe7fe809a0e787dee64046c21}
+      \strng{bibnamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authorbibnamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authornamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authorfullhash}{19de595fe7fe809a0e787dee64046c21}
+      \strng{authorfullhashraw}{19de595fe7fe809a0e787dee64046c21}
+      \field{labelalpha}{Wan+21}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Edge Computing}
+      \field{title}{EdgeServe: Latency-Aware Function Placement for Edge Computing}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 52}
+      \range{pages}{8}
+    \endentry
+  \enddatalist
+  \missing{jeon2019cloudsim}
+\endrefsection
+\endinput
+

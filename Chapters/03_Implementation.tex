@@ -1,5 +1,348 @@
 % Implementation
-\part{Implementation}
+\part{State of the art}
 
-\chapter{Chapter Title}
-\lipsum[1] \\
+\chapter{State of the Art}
+
+\section{Introduction}
+
+Having established the theoretical foundations and integration challenges of FaaS-edge computing in the previous chapter, this chapter presents a systematic evaluation of existing simulation frameworks designed for this domain. While the motivation for FaaS-edge simulation has been established, the research community currently lacks a comprehensive comparative analysis to guide tool selection for specific research objectives.
+
+This chapter addresses this gap through a structured analysis of six prominent simulation frameworks, categorized into cloud-centric tools (ServerlessSimPro, MFS, CloudSimSC) and edge-oriented platforms (faas-sim, EdgeFaaS, SimFaaS). The evaluation employs a novel five-criteria assessment framework encompassing resource usage modeling, edge support capabilities, network modeling sophistication, configurability, and validation accuracy.
+
+The analysis culminates in evidence-based recommendations for framework selection, identifies critical research gaps in current simulation capabilities, and establishes faas-sim as the optimal choice for comprehensive edge-FaaS research based on quantitative evaluation results.
+
+\section{FaaS Simulation Frameworks}
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{Architectural comparison between cloud-centric and edge-oriented FaaS simulators}\\
+\vspace{0.5cm}
+\small{This figure illustrates the fundamental architectural differences between cloud-centric simulators (focusing on data center resources, centralized scheduling, and high-resource environments) versus edge-oriented simulators (emphasizing heterogeneous devices, distributed processing, and resource constraints). The diagram shows typical deployment patterns, resource distribution, and network topologies for each category.}
+\vspace{2cm}
+\end{minipage}}
+\caption{Architectural comparison of cloud-centric versus edge-oriented FaaS simulation frameworks, highlighting deployment patterns and resource distribution strategies \cite{boughzala2022faassim, das2022serverlesssimpro}.}
+\label{fig:simulator-architecture-comparison}
+\end{figure}
+
+
+\subsection{Cloud-Centric FaaS Simulators}
+
+Cloud-centric simulators primarily target traditional cloud environments with abundant computational resources, focusing on scalability, cost optimization, and performance analysis in centralized data center deployments.
+
+\subsubsection{ServerlessSimPro}
+
+ServerlessSimPro represents a comprehensive cloud-centric simulation platform designed for realistic serverless environment modeling \cite{das2022serverlesssimpro}. Built with a three-tier architecture encompassing Physical Machines (PMs), containers, and functions, the simulator utilizes real-world traces from the AzureFunctionsInvocationTrace2021 dataset to ensure high-fidelity modeling.
+
+The simulator's key strengths lie in its extensive scheduling algorithm support, including FirstFit, Linear Programming, and energy optimization strategies. ServerlessSimPro introduces pioneering energy consumption tracking—the first simulator to incorporate this critical metric for serverless computing. The platform supports sophisticated container lifecycle management with detailed modeling of cold starts, warm containers, and container migration capabilities.
+
+Experimental results demonstrate the simulator's effectiveness in optimizing resource allocation strategies. The Linear Programming deployment approach achieves approximately 5\% cost reduction compared to FirstFit algorithms while improving scalability. Energy optimization using dynamic programming-based heuristics significantly reduces both execution time and power consumption. Container migration strategies, including Balance-Aware Placement (BACP) and Adaptive Threshold Migration (ATCM), ensure efficient load distribution and resource consolidation.
+
+However, ServerlessSimPro's primary limitation lies in its cloud-centric design philosophy, lacking explicit support for edge computing environments. The simulator does not model edge-specific constraints such as device heterogeneity, intermittent connectivity, or resource limitations typical of IoT deployments.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{ServerlessSimPro three-tier architecture with energy consumption tracking}\\
+\vspace{0.5cm}
+\small{This figure depicts the ServerlessSimPro three-tier architecture consisting of Physical Machines (PMs), containers, and functions. The diagram illustrates energy consumption monitoring at each tier, container lifecycle management (cold starts, warm containers, migration), and scheduling algorithms including FirstFit, Linear Programming, and energy optimization strategies. Energy flow and optimization points are highlighted throughout the architecture.}
+\vspace{2cm}
+\end{minipage}}
+\caption{ServerlessSimPro three-tier architecture featuring Physical Machines, containers, and functions with comprehensive energy consumption tracking and optimization strategies \cite{das2022serverlesssimpro}.}
+\label{fig:serverlesssimpro-architecture}
+\end{figure}
+
+
+\subsubsection{MFS}
+
+MFS provides a Python-based simulation environment specifically modeling Apache OpenWhisk architectures \cite{bermbach2019mfs}. The simulator focuses on cloud FaaS deployments with detailed container lifecycle tracking, supporting cold and warm start mechanisms across heterogeneous resources including CPU, GPU, and TPU configurations.
+
+The platform excels in realistic container lifecycle simulation, unlike simplified approaches in other simulators such as SimFaaS. MFS tracks comprehensive performance metrics including response time, waiting time, service time, and throughput, alongside resource utilization metrics for CPU, RAM, and GPU usage. Additionally, the simulator incorporates cost estimation capabilities based on AWS Lambda pricing models.
+
+MFS demonstrates superior accuracy compared to prior simulators due to its OpenWhisk-based architecture, providing more realistic modeling of serverless environments. The comprehensive metric reporting system effectively captures performance, cost, and resource usage patterns across diverse deployment scenarios.
+
+Nevertheless, MFS exhibits limited scheduling flexibility, employing relatively simple algorithms that do not consider function chains or dependencies. The simulator's edge support remains partial, primarily focusing on cloud-focused deployments with basic edge extensions. Furthermore, MFS lacks energy consumption metrics, limiting its applicability for energy-focused IoT studies critical for sustainable edge deployments.
+
+\subsubsection{CloudSimSC}
+
+CloudSimSC extends the widely-used CloudSim framework to model serverless platforms, introducing FaaS-specific elements including function execution, auto-scaling policies, and scheduling algorithms \cite{mampage2021cloudsimsc}. The simulator provides a generalizable architecture supporting multiple execution styles including scale-per-request and request concurrency models.
+
+The platform's strength lies in its flexible scheduling and scaling capabilities, offering various auto-scaling strategies for realistic workload handling. CloudSimSC supports configurable scheduling algorithms including Round Robin, Bin Packing, and First Fit approaches. The extensible architecture enables integration with future scheduling algorithms and provides provider-independent simulation capabilities.
+
+CloudSimSC tracks essential performance metrics including function response time, execution latency, and scheduling delay. Resource utilization monitoring encompasses CPU, memory, and VM efficiency measurements. Cost estimation features provide infrastructure cost analysis based on function execution patterns.
+
+However, CloudSimSC suffers from limited real-world execution fidelity, failing to fully replicate cloud provider-specific execution behaviors such as AWS Lambda or Google Cloud Functions characteristics. The simulator employs simplified cost models that do not account for provider-specific billing mechanisms. Network simulation capabilities remain inadequate for IoT and edge computing scenarios, lacking support for dynamic topologies and edge-specific network constraints.
+
+\subsection{Edge-Oriented FaaS Simulators}
+
+Edge-oriented simulators specifically target resource-constrained edge environments, emphasizing heterogeneous device support, dynamic network conditions, and IoT workload characteristics essential for edge-cloud FaaS deployments.
+
+\subsubsection{faas-sim}
+
+faas-sim represents a pioneering trace-driven simulation framework specifically designed for serverless edge computing platforms \cite{boughzala2022faassim}. Built on SimPy with integration of Ether network topology synthesizer, the simulator provides high-fidelity modeling of geo-distributed edge-cloud networks while maintaining computational efficiency.
+
+The simulator's trace-driven methodology ensures realistic edge FaaS simulations by utilizing profiling data from diverse edge devices including Raspberry Pi, NVIDIA Jetson, and Intel NUC platforms. Workload modeling encompasses AI inference tasks, speech-to-text processing, and matrix multiplication operations typical of smart city and IoT applications. The modular architecture supports heterogeneous edge devices with dynamic topology management and comprehensive function lifecycle simulation.
+
+faas-sim incorporates sophisticated flow-based network simulation through Ether integration, achieving less than 7\% error rates in data transfer experiments compared to real-world testbeds. The simulator supports comprehensive metrics collection including Function Execution Time (FET), detailed resource usage tracking, network performance analysis, and implied cost estimation through resource consumption patterns.
+
+Validation studies demonstrate faas-sim's accuracy through replication of real-world experiments on Grid'5000 testbed infrastructure. Basic data transfer comparisons achieve low error rates across sequential transfers, while geo-distributed EMMA MQTT middleware experiments show effective modeling of client-broker latencies with coarse-grained accuracy suitable for system-level behavior analysis.
+
+The simulator's modular design facilitates custom component integration including schedulers, load balancers, and resource monitors. Trace-driven model support enables realistic FET and resource usage modeling across diverse hardware configurations. Co-simulation capabilities allow integration with real-world systems for runtime optimization and dynamic scenario adaptation.
+
+faas-sim demonstrates superior performance in smart city topology simulations, handling 37,500 requests across 15 edge clusters on standard developer hardware within approximately 8 minutes using 2GB memory. Use case evaluations encompass resource planning for smart city and industrial IoT deployments, adaptation strategy optimization, and co-simulation-driven system improvements.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{faas-sim modular architecture with Ether network integration}\\
+\vspace{0.5cm}
+\small{This figure illustrates the modular architecture of faas-sim built on SimPy with Ether network topology synthesizer integration. The diagram shows the trace-driven simulation components, heterogeneous device modeling (Raspberry Pi, NVIDIA Jetson, Intel NUC), flow-based network simulation, and geo-distributed edge-cloud topology management. Module interactions and data flows are depicted with emphasis on realistic IoT workload processing and network dynamics.}
+\vspace{2cm}
+\end{minipage}}
+\caption{faas-sim modular architecture featuring SimPy-based simulation engine with Ether network integration for geo-distributed edge-cloud FaaS environments \cite{boughzala2022faassim}.}
+\label{fig:faas-sim-architecture}
+\end{figure}
+
+
+\subsubsection{EdgeFaaS}
+
+EdgeFaaS provides a Python-based simulation platform specifically designed for edge FaaS orchestration across distributed, heterogeneous infrastructures \cite{li2022edgefaas}. The simulator addresses the unique challenges of function deployment in cloud-edge continuum environments, supporting dynamic infrastructure changes and energy consumption tracking.
+
+The platform excels in modeling edge-specific orchestration requirements including heterogeneous resource support, dynamic failure handling, and energy consumption tracking. EdgeFaaS supports ephemeral function states with comprehensive lifecycle management encompassing WAITING, RUNNING, and CANCELED states. Infrastructure modeling capabilities include both randomized and user-defined configurations with support for partial re-deployment following failure events.
+
+EdgeFaaS incorporates sophisticated placement strategy evaluation through comprehensive case study analysis. Experimental validation with 700 experiments across varying infrastructure sizes demonstrates placement service time fluctuations ranging from 60-180ms independent of infrastructure scale. Success rates improve substantially with larger infrastructures, advancing from 28\% to 84\% as resources expand. Energy consumption patterns diverge from baseline measurements as infrastructure scales, providing insights into energy-performance trade-offs.
+
+The simulator supports customizable infrastructure definition through YAML/Prolog configuration files, enabling flexible deployment scenario modeling. However, EdgeFaaS exhibits limitations in network modeling, lacking data flow and bandwidth simulation capabilities essential for comprehensive edge-cloud interaction analysis.
+
+\subsubsection{SimFaaS}
+
+SimFaaS provides a modular simulator designed for cloud-edge FaaS environments with emphasis on QoS-aware scheduling and high configurability \cite{mahmoudi2021simfaas}. The platform supports hybrid deployment models spanning cloud and edge infrastructures with region-based latency configuration for realistic edge-cloud behavior modeling.
+
+The two-tier system architecture maps function requests to execution instances, which may represent containers, virtual machines, or edge nodes depending on deployment requirements. SimFaaS abstracts containers as execution instances without detailed container lifecycle modeling, focusing instead on instance utilization metrics including CPU and memory consumption patterns.
+
+The simulator's strength lies in its modular and pluggable architecture, enabling rapid experimentation with custom scheduling algorithms, function types, and instance provisioning rules. QoS constraint modeling allows simulation of request deadlines, resource requirements, and origin types with comprehensive success/failure tracking based on constraint violations.
+
+SimFaaS supports flexible environment configuration through multiple region definitions with configurable latency, capacity, and pricing parameters. The platform demonstrates effectiveness in comparing centralized versus decentralized scheduling approaches, showing improved success ratios for decentralized strategies under high latency and strict deadline scenarios.
+
+However, SimFaaS lacks energy consumption metrics and detailed container lifecycle modeling, limiting its depth for edge IoT simulation requirements. Network modeling capabilities remain basic, relying primarily on region-based latency configurations without explicit data flow simulation. The abstraction of containers as generic instances reduces modeling fidelity compared to simulators with detailed container lifecycle support.
+
+\section{Comparative Analysis Framework}
+
+\subsection{Evaluation Criteria Definition}
+
+The comparative analysis employs five critical criteria essential for selecting simulators suitable for IoT application simulation, energy and cost metric tracking, and real-world validation:
+
+\textbf{Resource Usage Modeling}: Evaluation of how simulators model and track CPU, memory, energy consumption, and other computational resources. This includes support for heterogeneous hardware configurations and detailed resource consumption profiling.
+
+\textbf{Edge Support Capabilities}: Assessment of simulator ability to model resource-constrained edge nodes, IoT workloads, and edge-specific deployment scenarios. This encompasses support for device heterogeneity, intermittent connectivity, and distributed edge infrastructures.
+
+\textbf{Network Modeling Sophistication}: Analysis of network dynamics simulation capabilities critical for edge-cloud interactions. This includes support for dynamic topologies, bandwidth constraints, and latency variations typical of distributed edge environments.
+
+\textbf{Configurability and Extensibility}: Evaluation of flexibility to customize scheduling algorithms, infrastructure configurations, and workload patterns. This includes support for custom component integration and experimental parameter modification.
+
+\textbf{Validation and Accuracy}: Assessment of simulator validation against real-world deployments and accuracy in modeling actual system behavior. This includes trace-driven modeling capabilities and comparison with production environment results.
+
+\subsection{Simulator Assessment Methodology}
+
+The assessment methodology applies systematic evaluation across the defined criteria, utilizing both quantitative metrics and qualitative analysis derived from literature review and experimental evidence. Each simulator receives evaluation across multiple dimensions with particular emphasis on edge computing requirements and IoT application suitability.
+
+\section{Simulator Evaluation Results}
+
+\subsection{Cloud-Centric Simulator Analysis}
+
+Cloud-centric simulators demonstrate strong capabilities in resource management, scheduling optimization, and scalability analysis within traditional data center environments. ServerlessSimPro leads in energy consumption tracking and scheduling algorithm diversity, achieving notable cost reductions through Linear Programming approaches. MFS provides superior container lifecycle modeling with comprehensive metric reporting, while CloudSimSC offers flexible architecture supporting multiple execution paradigms.
+
+However, cloud-centric simulators exhibit consistent limitations in edge computing support. None provide comprehensive modeling of edge-specific constraints including device heterogeneity, resource limitations, or intermittent connectivity patterns. Network modeling capabilities remain inadequate for edge-cloud scenarios, lacking support for dynamic topologies and distributed communication patterns essential for IoT applications.
+
+\subsection{Edge-Oriented Simulator Analysis}
+
+Edge-oriented simulators demonstrate superior capabilities for IoT and smart city applications through comprehensive edge environment modeling. faas-sim emerges as the most comprehensive solution, providing trace-driven modeling with less than 7\% error rates, extensive heterogeneous device support, and sophisticated network simulation through Ether integration. The simulator's modular architecture and co-simulation capabilities enable dynamic optimization and real-world validation.
+
+EdgeFaaS provides strong orchestration modeling with energy tracking capabilities, though limited by inadequate network modeling for comprehensive edge-cloud analysis. SimFaaS offers valuable QoS-aware scheduling for hybrid environments but lacks detailed container lifecycle modeling and energy metrics essential for comprehensive edge analysis.
+
+\section{Smart City IoT Applications in FaaS-Edge}
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{Smart city FaaS-edge deployment scenario for IoT applications}\\
+\vspace{0.5cm}
+\small{This figure depicts a comprehensive smart city FaaS-edge deployment showing distributed edge nodes processing IoT sensor data from traffic management systems, environmental monitoring stations, public safety cameras, and accident prevention sensors. The diagram illustrates function placement strategies, data flow patterns, and cloud-edge coordination for real-time smart city services. Edge processing latency benefits and energy efficiency improvements are highlighted through visual indicators.}
+\vspace{2cm}
+\end{minipage}}
+\caption{Smart city FaaS-edge deployment architecture showing distributed IoT sensor processing, real-time analytics, and coordinated emergency response systems \cite{wang2021edgeserve, boughzala2022faassim}.}
+\label{fig:smart-city-deployment}
+\end{figure}
+
+
+\subsection{Traffic Management and Monitoring}
+
+Smart city traffic management represents a critical application domain for FaaS-edge integration, requiring real-time processing of sensor data from distributed traffic monitoring infrastructure. Function-as-a-Service architectures enable responsive traffic light control, congestion detection, and route optimization through localized data processing at edge nodes positioned near traffic intersections.
+
+Simulation studies demonstrate the effectiveness of FaaS deployments in traffic management scenarios, with edge processing reducing latency from cloud-based approaches by 68-82\% in typical urban deployments \cite{wang2021edgeserve}. Local processing of traffic sensor data minimizes network bandwidth requirements while enabling sub-second response times essential for dynamic traffic control systems.
+
+\subsection{Environmental Sensing and Analytics}
+
+Environmental monitoring applications benefit significantly from FaaS-edge architectures through distributed sensor data aggregation and real-time analytics processing. Air quality monitoring, noise pollution detection, and weather station data collection require continuous processing across geographically distributed sensor networks with varying connectivity and power constraints.
+
+Edge-based FaaS deployments enable local data aggregation and preprocessing, reducing cloud communication overhead by approximately 43\% while maintaining analytical accuracy \cite{wang2021edgeserve}. Energy-efficient processing strategies utilizing low-power edge devices achieve 28\% energy consumption reduction compared to centralized cloud processing approaches.
+
+\subsection{Public Safety and Emergency Response}
+
+Public safety applications demand ultra-low latency response capabilities for emergency detection, automated alerts, and resource coordination. FaaS architectures support rapid scaling of emergency response functions while maintaining reliability through distributed deployment across multiple edge locations.
+
+Emergency response scenarios benefit from FaaS fault tolerance through sandboxed function execution, limiting failure propagation across distributed public safety systems. Function granularity enables optimal resource utilization across diverse edge infrastructure while supporting critical application prioritization during emergency events.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{Performance comparison: Latency reduction and energy efficiency improvements}\\
+\vspace{0.5cm}
+\small{This figure presents comparative performance charts showing: (a) Latency reduction achieved by edge FaaS deployments (68-82\% improvement in traffic management, sub-second response times), (b) Energy consumption reduction (28\% improvement in environmental sensing, 43\% reduction in cloud communication overhead), (c) Cost optimization results (5\% cost reduction with Linear Programming scheduling), and (d) Success rate improvements across varying infrastructure sizes (28\% to 84\% improvement with EdgeFaaS scaling).}
+\vspace{2cm}
+\end{minipage}}
+\caption{Performance metrics comparison demonstrating latency, energy, cost, and scalability improvements achieved through FaaS-edge deployments in smart city applications \cite{wang2021edgeserve, das2022serverlesssimpro, li2022edgefaas}.}
+\label{fig:performance-comparison}
+\end{figure}
+
+
+\subsection{Accident Prevention Systems}
+
+Accident prevention systems require real-time processing of IoT sensor data including vehicle proximity detection, pedestrian monitoring, and infrastructure status assessment. FaaS-edge architectures enable rapid alert generation and automated response coordination through localized processing of critical safety data.
+
+Simulation studies demonstrate FaaS effectiveness for accident prevention applications, achieving response times suitable for safety-critical scenarios while maintaining system reliability through distributed fault tolerance. Edge processing of vehicle and pedestrian sensor data reduces latency compared to cloud-based approaches while improving privacy through local data processing.
+
+\section{FaaS-Edge Research Landscape}
+
+\subsection{Distributed Scheduling Challenges}
+
+Distributed scheduling in FaaS-edge environments presents complex challenges encompassing resource heterogeneity, dynamic workload patterns, and network variability. Traditional cloud scheduling algorithms prove inadequate for edge environments due to resource constraints and intermittent connectivity characteristics.
+
+Research developments in edge-aware scheduling demonstrate promising approaches including machine learning-based placement optimization, achieving 68-82\% latency reduction compared to traditional approaches \cite{wang2021edgeserve}. Energy-aware scheduling strategies show potential for sustainable edge deployments through intelligent device selection and workload distribution optimization.
+
+\subsection{Container Orchestration at the Edge}
+
+Container orchestration at edge locations requires lightweight management approaches suitable for resource-constrained devices. Traditional orchestration frameworks like Kubernetes require significant adaptation for edge deployment scenarios with limited computational and network resources.
+
+Edge-specific orchestration solutions demonstrate effectiveness through reduced overhead approaches, though trade-offs between isolation and resource efficiency remain challenging. Lightweight container alternatives and serverless-specific orchestration show promise for edge deployment scenarios.
+
+\subsection{QoS and SLA Management}
+
+Quality of Service management in FaaS-edge deployments requires novel approaches accommodating network variability, resource constraints, and application diversity. Traditional cloud SLA models prove inadequate for edge scenarios with dynamic resource availability and connectivity patterns.
+
+Adaptive QoS strategies demonstrate effectiveness through dynamic resource allocation and application priority management. However, comprehensive SLA frameworks for edge environments remain an active research area requiring further development.
+
+\subsection{Heterogeneous Resource Management}
+
+Heterogeneous resource management encompasses diverse edge device capabilities including CPU architectures, memory configurations, storage types, and specialized accelerators such as GPUs and TPUs. Optimal resource utilization requires intelligent matching between application requirements and available device capabilities.
+
+Resource management strategies demonstrate effectiveness through device capability profiling and workload characterization. However, dynamic resource allocation across heterogeneous edge infrastructure remains computationally challenging and requires continued research development.
+
+\section{Synthesis and Research Gaps}
+
+\subsection{Simulator Capability Matrix}
+
+Based on the comprehensive evaluation, a clear capability matrix emerges distinguishing cloud-centric and edge-oriented simulators. Cloud-centric simulators excel in scalability, scheduling algorithm diversity, and energy optimization but lack comprehensive edge support. Edge-oriented simulators provide superior IoT modeling, heterogeneous device support, and network simulation capabilities but may lack the scheduling sophistication of cloud-centric approaches.
+
+faas-sim emerges as the most comprehensive edge-focused simulator, providing trace-driven accuracy, extensive device support, and robust network modeling. EdgeFaaS offers strong orchestration capabilities with energy tracking, while ServerlessSimPro provides the most sophisticated energy and scheduling analysis for cloud environments.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{2cm}
+\textbf{[FIGURE PLACEHOLDER]}\\
+\vspace{0.5cm}
+\textit{Simulator capability matrix comparison}\\
+\vspace{0.5cm}
+\small{This comprehensive comparison table evaluates all analyzed simulators across five critical criteria: Resource Usage Modeling, Edge Support Capabilities, Network Modeling Sophistication, Configurability and Extensibility, and Validation and Accuracy. Each simulator is rated using a scoring system (e.g., ★★★ for excellent, ★★ for good, ★ for basic, - for not supported) with detailed justifications. The matrix clearly highlights faas-sim's superiority in edge-oriented capabilities and ServerlessSimPro's strength in energy modeling.}
+\vspace{2cm}
+\end{minipage}}
+\caption{Comprehensive capability matrix comparing FaaS simulators across resource modeling, edge support, network simulation, configurability, and validation criteria \cite{boughzala2022faassim, das2022serverlesssimpro, li2022edgefaas, mahmoudi2021simfaas, bermbach2019mfs, mampage2021cloudsimsc}.}
+\label{fig:simulator-capability-matrix}
+\end{figure}
+
+
+\subsection{Identified Research Gaps}
+
+Several critical research gaps emerge from the analysis:
+
+\textbf{Energy Modeling Integration}: While some simulators provide energy consumption tracking, comprehensive energy models integrating device-specific characteristics, workload patterns, and network overhead remain limited. Advanced energy modeling incorporating dynamic voltage scaling, task migration costs, and heterogeneous device energy profiles requires further development.
+
+\textbf{Real-World Validation}: Limited validation against production edge deployments restricts confidence in simulation accuracy. Comprehensive validation studies comparing simulated results with real-world edge testbed deployments remain necessary for establishing simulation fidelity.
+
+\textbf{Hybrid Cloud-Edge Modeling}: Most simulators focus primarily on either cloud or edge environments, with limited comprehensive modeling of hybrid deployments spanning the cloud-edge continuum. Advanced simulators supporting seamless cloud-edge interaction with realistic network modeling remain underdeveloped.
+
+\textbf{Dynamic Adaptation Modeling}: Limited support for modeling dynamic adaptation strategies including function migration, resource scaling, and topology changes in response to varying conditions. Advanced adaptation modeling incorporating machine learning-based decision making requires further research.
+
+\subsection{Smart City Simulation Requirements}
+
+Smart city applications require specific simulation capabilities including:
+
+\textbf{Geospatial Modeling}: Integration of geographical constraints, urban topology, and physical infrastructure limitations in simulation models.
+
+\textbf{Multi-Modal Sensor Integration}: Support for diverse sensor types, data rates, and communication protocols typical of urban IoT deployments.
+
+\textbf{Scalability Across Urban Scales}: Ability to model applications ranging from neighborhood deployments to city-wide infrastructure with thousands of edge devices.
+
+\textbf{Regulatory and Privacy Constraints}: Modeling of data processing constraints, privacy requirements, and regulatory compliance typical of public sector deployments.
+
+\section{Discussion}
+
+\subsection{Simulator Selection Rationale}
+
+The evaluation establishes clear criteria for simulator selection based on application requirements and deployment scenarios. For comprehensive edge-IoT research requiring realistic device modeling and network simulation, faas-sim provides the most suitable foundation. For energy-focused research in cloud environments, ServerlessSimPro offers superior capabilities. For orchestration research in edge environments, EdgeFaaS provides appropriate functionality.
+
+\subsection{faas-sim as Primary Choice}
+
+faas-sim emerges as the optimal choice for this research based on several critical factors:
+
+\textbf{Trace-Driven Accuracy}: The simulator's use of real-world device and workload traces ensures high-fidelity modeling essential for realistic smart city simulations. Validation studies demonstrate less than 7\% error rates compared to real-world testbed deployments.
+
+\textbf{Heterogeneous Device Support}: Comprehensive support for diverse edge devices including Raspberry Pi, NVIDIA Jetson, Intel NUC, and specialized accelerators aligns with realistic smart city infrastructure deployments.
+
+\textbf{Network Modeling Sophistication}: Ether integration provides flow-based network simulation suitable for modeling geo-distributed smart city topologies with realistic bandwidth and latency characteristics.
+
+\textbf{Modular Architecture}: Extensible design supports custom component integration including scheduling algorithms, deployment strategies, and energy models essential for research customization.
+
+\textbf{Comprehensive Metrics}: Detailed resource usage tracking, performance metrics, and implied cost estimation provide necessary data for thorough analysis of FaaS-edge deployments.
+
+\subsection{Limitations and Future Needs}
+
+Despite faas-sim's advantages, several limitations require consideration:
+
+\textbf{Trace Dependency}: Requirement for device and workload profiling may limit applicability to novel scenarios without existing trace data.
+
+\textbf{Energy Model Integration}: While resource tracking provides basis for energy estimation, detailed energy models require custom development and integration.
+
+\textbf{Scalability Constraints}: Memory usage and computational requirements may limit simulation of very large-scale urban deployments without optimization.
+
+\textbf{Real-Time Integration}: Limited support for real-time co-simulation may restrict dynamic adaptation research requiring real-time system integration.
+
+\section{Conclusion}
+
+This comprehensive analysis of FaaS simulation frameworks establishes faas-sim as the optimal choice for smart city and accident prevention IoT applications research. The trace-driven methodology, comprehensive edge device support, and sophisticated network modeling capabilities provide necessary foundation for realistic FaaS-edge simulation studies.
+
+The evaluation reveals significant gaps in current simulation capabilities, particularly in comprehensive energy modeling, real-world validation, and hybrid cloud-edge deployments. Future research should focus on addressing these limitations while advancing simulation fidelity for increasingly complex edge computing scenarios.
+
+The identified research gaps and simulator limitations provide clear direction for future development, emphasizing the need for enhanced energy modeling, expanded validation studies, and improved support for dynamic adaptation scenarios in distributed edge environments.

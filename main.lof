@@ -1,0 +1,16 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \xpg@aux {}{english}\small Edge Computing Architecture ~\blx@tocontentsinit {0}\cite {belcastro2023edge}}}{11}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \xpg@aux {}{english}FaaS Architecture ~\blx@tocontentsinit {0}\cite {mampage2021holistic}}}{13}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \xpg@aux {}{english}\small Container Lifecycle in FaaS ~\blx@tocontentsinit {0}\cite {moreno2023latency}}}{14}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \xpg@aux {}{english} Placeholder : Network Dynamics in Edge-FaaS ?}}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \xpg@aux {}{english}\small Placeholder Smart City Applications - illustrating IoT devices, edge computing nodes, and FaaS functions for various urban services}}{16}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \xpg@aux {}{english}Placeholder : Simulation Validation Process - depicting the cycle of model development, validation against real systems, and iterative refinement}}{17}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \xpg@aux {}{english}ServerlessSimPro three-tier architecture featuring Physical Machines, containers, and functions with comprehensive energy consumption tracking and optimization strategies \blx@tocontentsinit {0}\cite {das2022serverlesssimpro}.}}{20}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \xpg@aux {}{english}MFS architecture featuring Apache OpenWhisk-based simulation with comprehensive container lifecycle tracking and performance metrics collection \blx@tocontentsinit {0}\cite {bermbach2019mfs, banaei2022etas}.}}{21}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \xpg@aux {}{english}CloudSimSC Class diagram featuring CloudSim framework extension with FaaS-specific modules for auto-scaling and scheduling \blx@tocontentsinit {0}\cite {mampage2021cloudsimsc}.}}{22}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \xpg@aux {}{english}faas-sim modular architecture featuring SimPy-based simulation engine with Ether network integration for geo-distributed edge-cloud FaaS environments \blx@tocontentsinit {0}\cite {boughzala2022faassim}.}}{23}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \xpg@aux {}{english}EdgeFaaS architecture featuring distributed edge orchestration with dynamic infrastructure management and energy consumption tracking \blx@tocontentsinit {0}\cite {li2022edgefaas}.}}{23}{figure.caption.12}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

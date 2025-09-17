@@ -178,6 +178,41 @@
       \field{pages}{1\bibrangedash 20}
       \range{pages}{20}
     \endentry
+    \entry{banaei2022etas}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=464416bc76202dee34bffe6b009d94c8}{%
+           family={Banaei},
+           familyi={B\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f73b4c751cd45ab5c8ec9ab5d2d3c067}{%
+           family={Sharifi},
+           familyi={S\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{fullhash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{fullhashraw}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{bibnamehash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{authorbibnamehash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{authornamehash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{authorfullhash}{d3b331173292cd3d65bc5c4a47f16044}
+      \strng{authorfullhashraw}{d3b331173292cd3d65bc5c4a47f16044}
+      \field{labelalpha}{BS22}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Supercomputing}
+      \field{month}{03}
+      \field{title}{ETAS: predictive scheduling of functions on worker nodes of Apache OpenWhisk platform}
+      \field{volume}{78}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s11227-021-04057-z
+      \endverb
+    \endentry
     \entry{belcastro2023edge}{article}{}{}
       \name{author}{5}{}{%
         {{hash=60a33fbbef539963774f7becc4924920}{%
@@ -604,6 +639,58 @@
       \verb{doi}
       \verb 10.1186/s13677-023-00485-9
       \endverb
+    \endentry
+    \entry{rausch2020ether}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=08296bb13f8d84579ba4d5167abf8bf5}{%
+           family={Rausch},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=75f8f75312ca85d28c3405cc4e4ad0fe}{%
+           family={Lachner},
+           familyi={L\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod}}}%
+        {{hash=56bb8092a5960818f61db1db80932866}{%
+           family={Frangoudis},
+           familyi={F\bibinitperiod},
+           given={Pantelis\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2833487b66970f45df29cfe16f673171}{%
+           family={Raith},
+           familyi={R\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=748d3aa7019baff9dd392f0f9e793368}{%
+           family={Dustdar},
+           familyi={D\bibinitperiod},
+           given={Schahram},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leicester, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {IEEE/ACM}%
+      }
+      \strng{namehash}{74d10614ee60190ffc428f661849f2f3}
+      \strng{fullhash}{f4e4d777c4411ca5607dde3613639a56}
+      \strng{fullhashraw}{f4e4d777c4411ca5607dde3613639a56}
+      \strng{bibnamehash}{74d10614ee60190ffc428f661849f2f3}
+      \strng{authorbibnamehash}{74d10614ee60190ffc428f661849f2f3}
+      \strng{authornamehash}{74d10614ee60190ffc428f661849f2f3}
+      \strng{authorfullhash}{f4e4d777c4411ca5607dde3613639a56}
+      \strng{authorfullhashraw}{f4e4d777c4411ca5607dde3613639a56}
+      \field{labelalpha}{Rau+20}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th IEEE/ACM International Conference on Utility and Cloud Computing}
+      \field{series}{UCC '20}
+      \field{title}{Synthesizing Plausible Infrastructure Configurations for Evaluating Edge Computing Systems}
+      \field{year}{2020}
     \endentry
     \entry{svorobej2019simulating}{article}{}{}
       \name{author}{9}{}{%

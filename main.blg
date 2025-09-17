@@ -1,17 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[129] biber-MSWIN64:342> INFO - === 
-[172] Biber.pm:421> INFO - Reading 'main.bcf'
-[302] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
-[319] Biber.pm:4487> INFO - Processing section 0
-[332] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
-[374] bibtex.pm:1713> INFO - LaTeX decoding ...
-[398] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[565] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[565] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[588] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[600] bbl.pm:779> INFO - Output to main.bbl
-[601] Biber.pm:132> WARN - I didn't find a database entry for 'jeon2019cloudsim' (section 0)
-[601] Biber.pm:134> INFO - WARNINGS: 1
+[120] biber-MSWIN64:342> INFO - === 
+[155] Biber.pm:421> INFO - Reading 'main.bcf'
+[282] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
+[298] Biber.pm:4487> INFO - Processing section 0
+[310] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
+[350] bibtex.pm:1713> INFO - LaTeX decoding ...
+[373] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
+[534] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[534] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[534] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[534] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[557] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[571] bbl.pm:779> INFO - Output to main.bbl
+[572] Biber.pm:132> WARN - I didn't find a database entry for 'jeon2019cloudsim' (section 0)
+[572] Biber.pm:134> INFO - WARNINGS: 1

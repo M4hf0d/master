@@ -1,0 +1,88 @@
+\subsection{Edge-Cloud Continuum: Conceptual Frameworks and Challenge Analysis}
+
+\noindent
+\begin{minipage}{\textwidth}
+\textbf{\large When Edge Meets FaaS: Opportunities and Challenges} \cite{jin2019when}
+
+\textbf{Research Focus:} Comprehensive analysis of FaaS deployment challenges and opportunities at the edge through real hardware evaluation
+
+\textbf{Methodology:}
+\begin{itemize}
+    \item Real hardware testing on Raspberry Pi 3B+ devices
+    \item AWS IoT Greengrass and OpenFaaS platform evaluation
+    \item Custom distributed scheduling prototype development
+\end{itemize}
+
+\textbf{Key Findings:}
+\begin{itemize}
+    \item \textit{Sandbox Performance Trade-offs:} Overhead ranging from 3.8\% (lightweight containers) to 78.3\% (Docker containers)
+    \item \textit{Cold Start Impact:} 5.3x runtime increase compared to warm containers
+    \item \textit{Scheduling Latency:} 0.86s (edge-only) vs 0.44s (cloud-only) execution
+\end{itemize}
+
+\textbf{Identified Opportunities:}
+\begin{itemize}
+    \item Improved latency through local data processing
+    \item Enhanced privacy via function isolation mechanisms
+    \item Increased productivity through hardware abstraction
+    \item Better reliability via sandboxed execution environments
+    \item Reduced costs through local resource utilization
+\end{itemize}
+
+\textbf{Critical Challenges:}
+\begin{itemize}
+    \item Resource management complexity in heterogeneous environments
+    \item Function deployment and orchestration across distributed nodes
+    \item Security vulnerabilities from multi-tenancy and limited isolation
+    \item Programming model limitations for distributed edge scenarios
+    \item Monitoring and debugging difficulties in ephemeral environments
+\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{\textwidth}
+\textbf{\large Serverless Computing in the Edge-Cloud Continuum Framework} \cite{belcastro2023edge}
+
+\textbf{Research Focus:} EdgeServe framework development for comprehensive edge-fog-cloud serverless integration with ML-driven optimization
+
+\textbf{Methodology:}
+\begin{itemize}
+    \item Three-layer architecture design (edge-fog-cloud)
+    \item Machine learning algorithm development for function placement
+    \item iFogSim simulation validation with real-world case studies
+\end{itemize}
+
+\textbf{Framework Components:}
+\begin{itemize}
+    \item \textit{Resource Management:} Static profiling + dynamic monitoring approach
+    \item \textit{Data Consistency:} Multi-level caching with lightweight consensus protocols
+    \item \textit{Function Placement:} ML algorithms considering proximity, network conditions, latency
+    \item \textit{Security Layer:} End-to-end encryption, secure enclaves, differential privacy (ε=0.1)
+\end{itemize}
+
+\textbf{Performance Results:}
+\begin{itemize}
+    \item \textit{Latency Reduction:} 68-82\% improvement for latency-sensitive tasks
+    \item \textit{Cost Optimization:} 43\% average reduction, 61\% savings in smart city scenarios
+    \item \textit{Energy Efficiency:} 28\% improvement through optimized edge processing
+    \item \textit{Security:} Zero breaches with sub-50ms authentication latency
+\end{itemize}
+
+\textbf{Application Domains:}
+\begin{itemize}
+    \item Smart city traffic management and optimization
+    \item Industrial IoT predictive maintenance systems
+    \item Mobile augmented reality gaming platforms
+    \item Real-time urban sensing and analytics
+\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\textbf{Synthesis:} Both studies establish critical theoretical foundations for FaaS-edge integration, revealing the fundamental gap between cloud-centric serverless models and edge computing requirements. Their convergent findings validate the necessity for specialized simulation frameworks capable of modeling complex interactions between resource constraints, network dynamics, security requirements, and application performance in distributed edge-cloud environments.
+
+The comprehensive analysis reveals distinct research contributions across simulation frameworks, conceptual studies, and practical implementations. Simulation-focused papers (ServerlessSimPro, faas-sim, EdgeFaaS) provide concrete tools with varying edge computing capabilities, while conceptual papers (Aslanpour et al.) identify critical challenges and opportunities. Application studies (Belcastro et al.) demonstrate real-world feasibility, and survey papers (Mampage et al.) provide comprehensive taxonomies for future research directions.
+
+The matrix clearly establishes faas-sim as the most comprehensive simulation framework for edge-IoT applications, combining trace-driven accuracy with extensive edge device support. ServerlessSimPro excels in energy modeling for cloud environments, while conceptual papers provide essential theoretical foundations for understanding the broader FaaS-edge research landscape.

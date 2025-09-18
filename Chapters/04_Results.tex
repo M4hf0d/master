@@ -1,5 +1,94 @@
-% Results
-\part{Results}
+% Conclusion
+\chapter{Conclusion}
 
-\chapter{Chapter Title}
-\lipsum[1] \\
+This chapter provides a concise synthesis of the research findings and their implications for the field of serverless edge computing simulation. It addresses the primary research question, summarizes key contributions, acknowledges limitations, and outlines future research directions.
+
+\section{Research Summary}
+
+This thesis investigated the fundamental question: \textit{Which existing FaaS simulation framework is most suitable for modeling smart city edge computing scenarios?} Through systematic evaluation of six prominent simulation frameworks, this research established that no single existing simulator meets all requirements for realistic smart city FaaS simulation.
+
+The study developed a comprehensive evaluation framework examining simulation approaches, edge computing support, network modeling capabilities, configurability, and energy modeling features. Applied to ServerlessSimPro, faas-sim, EdgeFaaS, SimFaaS, MFS, and CloudSimSC, this analysis revealed faas-sim as the optimal foundation for smart city research, despite requiring energy modeling extensions.
+
+Four critical smart city simulation requirements were identified: trace-driven accuracy, robust network modeling, high configurability, and comprehensive energy modeling. Current simulators address these requirements partially, necessitating framework extensions or multi-tool approaches for complete smart city scenario modeling.
+
+\section{Key Findings}
+
+% TODO: Add Figure 4.1 - Key Findings Summary
+% Visual summary showing:
+% - faas-sim as optimal choice with key strengths (trace-driven, network modeling, configurability)
+% - Critical gap: energy modeling across all frameworks
+% - Four-tier requirements framework for smart city simulation
+\begin{figure}[htbp]
+\centering
+\fbox{\parbox{0.9\textwidth}{\centering \vspace{2cm}
+\textbf{Figure 4.1: Key Research Findings} \\
+\vspace{0.5cm}
+Placeholder for key findings summary diagram
+\vspace{2cm}}}
+\caption{Summary of key findings from the FaaS simulation framework evaluation}
+\label{fig:key-findings}
+\end{figure}
+
+Three primary findings emerged from this research:
+
+\textbf{Framework Selection}: faas-sim represents the optimal choice for smart city FaaS simulation research, offering superior trace-driven accuracy (<7\% error rates), sophisticated network modeling via Ether integration \cite{rausch2020ether}, and high configurability through Python-based architecture.
+
+\textbf{Critical Gap Identification}: No existing simulator provides comprehensive coverage of all smart city requirements. Energy modeling represents the most significant limitation across current frameworks, requiring custom development for realistic urban IoT scenario simulation.
+
+\textbf{Requirements Framework}: Four essential capabilities were established for smart city simulation: trace-driven accuracy, robust network modeling, high configurability, and comprehensive energy modeling. This framework provides guidance for future simulator development and selection.
+
+\section{Research Contributions}
+
+This thesis makes three distinct contributions to the field of serverless edge computing simulation:
+
+\textbf{Systematic Evaluation Methodology}: Development of a comprehensive framework for FaaS simulator assessment, providing standardized criteria that enable objective comparison across diverse simulation platforms. This methodology addresses the lack of systematic evaluation approaches in current literature.
+
+\textbf{Smart City Requirements Framework}: Identification and formalization of four critical capabilities essential for realistic urban IoT scenario simulation. This framework bridges the gap between theoretical edge computing challenges and practical simulation requirements.
+
+\textbf{Evidence-Based Simulator Selection}: Establishment of faas-sim as the optimal foundation for smart city FaaS research, with detailed rationale for energy modeling extensions that preserve core simulation strengths while addressing identified gaps.
+
+\section{Limitations}
+
+This research acknowledges several important limitations:
+
+\textbf{Theoretical Analysis Scope}: The evaluation relied on literature review and framework documentation without empirical validation through real-world smart city deployments or comprehensive testbed experiments.
+
+\textbf{Energy Modeling Implementation}: The proposed faas-sim energy modeling extensions remain conceptual, requiring future implementation and validation work.
+
+\textbf{Framework Accessibility}: Limited access to some simulation frameworks may have affected the depth of comparative analysis, particularly for proprietary or poorly documented tools.
+
+These limitations establish clear boundaries for the research contributions while providing direction for future empirical validation studies.
+
+\section{Future Research Directions}
+
+% TODO: Add Figure 4.2 - Future Research Roadmap
+% Roadmap showing three key directions:
+% 1. Energy modeling implementation for faas-sim
+% 2. Real-world validation studies
+% 3. Extended smart city application scenarios
+\begin{figure}[htbp]
+\centering
+\fbox{\parbox{0.8\textwidth}{\centering \vspace{2cm}
+\textbf{Figure 4.2: Future Research Roadmap} \\
+\vspace{0.5cm}
+Placeholder for future research directions
+\vspace{2cm}}}
+\caption{Future research directions for advancing FaaS-edge simulation capabilities}
+\label{fig:future-research}
+\end{figure}
+
+Three critical research directions emerge from this work:
+
+\textbf{Energy Modeling Implementation}: Develop and integrate comprehensive energy models within faas-sim, focusing on heterogeneous edge device energy profiles, dynamic voltage scaling, and thermal management constraints. Validation against real edge device measurements will be essential.
+
+\textbf{Empirical Validation}: Conduct real-world validation studies comparing simulation predictions with actual smart city deployments. Collaborative partnerships with urban IoT initiatives will provide access to production data for comprehensive framework validation.
+
+\textbf{Extended Application Domains}: Expand simulation capabilities to address diverse smart city scenarios including traffic management, environmental monitoring, and emergency response systems. Development of standardized benchmarks will enable consistent evaluation across research groups.
+
+\section{Closing Remarks}
+
+This research addressed the fundamental challenge of selecting appropriate simulation frameworks for serverless edge computing in smart city environments. Through systematic evaluation of six prominent simulators, faas-sim emerged as the optimal foundation for future smart city FaaS research, despite requiring energy modeling extensions.
+
+The established evaluation methodology and smart city requirements framework provide the research community with systematic approaches for simulator selection and development. These contributions address a critical gap in current literature and establish clear guidelines for advancing simulation capabilities in the rapidly evolving field of serverless edge computing.
+
+As smart cities continue to mature and edge computing technologies advance, sophisticated simulation capabilities become increasingly essential. This research provides the foundation for developing next-generation FaaS simulation frameworks capable of modeling the complexity and scale of modern urban IoT deployments, ultimately supporting the design and optimization of smart city technologies that will shape our urban future.

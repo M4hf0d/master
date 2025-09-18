@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.9)  18 SEP 2025 13:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.9)  18 SEP 2025 19:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1446,15 +1446,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                jeon2019cloudsim
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 5.
 Package biblatex Info: Reference segment=0 on input line 5.
 
@@ -1617,17 +1609,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./Chapters/01_Introduction.tex
 Chapter 1.
 
-LaTeX Warning: Citation 'jeon2019cloudsim' on page 7 undefined on input line 12.
-
-
 
 [7
 
 
 
-])
+]
 
-[8]
+[8])
 
 [9]
 \openout2 = `Chapters/02_Background.aux'.
@@ -1681,7 +1670,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [17]
 \openout2 = `Chapters/03_Implementation.aux'.
 
- (./Chapters/03_implementation.tex
+ (./Chapters/03_Implementation.tex
 
 [18
 
@@ -1987,8 +1976,6 @@ Overfull \hbox (9.65561pt too wide) in paragraph at lines 347--348
 
  (./Chapters/04_Results.tex
 Chapter 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 27.
 
 
 [31
@@ -2028,6 +2015,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--31
 
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 34.
+
+Overfull \hbox (6.87053pt too wide) in paragraph at lines 35--35
+[]\TU/lmr/m/n/12 less solutions. 2023. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][] [] [][][] [] [][][][][] [][] [][] [][] [][][][][][][][][][][]$[][][]. []
+ []
+
+
 
 [37
 
@@ -2049,12 +2044,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46759 strings out of 468442
- 1008793 string characters out of 5449249
- 2074796 words of memory out of 5000000
- 74303 multiletter control sequences out of 15000+600000
+ 46761 strings out of 468442
+ 1009055 string characters out of 5449249
+ 2074689 words of memory out of 5000000
+ 74306 multiletter control sequences out of 15000+600000
  647835 words of font info for 102 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 92i,11n,95p,2532b,5110s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,11n,95p,2532b,5113s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (39 pages).

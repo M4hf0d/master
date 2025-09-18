@@ -68,7 +68,7 @@
 \contentsline {section}{\numberline {4.3}Research Contributions}{32}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Limitations}{32}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Future Research Directions}{32}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Closing Remarks}{33}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Closing Remarks}{32}{section.4.6}%
 \contentsline {part}{II\hspace {1em}Conclusion}{34}{part.2}%
 \contentsline {chapter}{\numberline {5}Chapter Title}{35}{chapter.5}%
 \contentsline {part}{III\hspace {1em}Bibliography}{36}{part.3}%

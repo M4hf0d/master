@@ -385,6 +385,64 @@
       \field{pages}{1\bibrangedash 35}
       \range{pages}{35}
     \endentry
+    \entry{datadog2023serverless}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3983159b26a23291e755be54ac03be23}{%
+           family={{Datadog}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3983159b26a23291e755be54ac03be23}
+      \strng{fullhash}{3983159b26a23291e755be54ac03be23}
+      \strng{fullhashraw}{3983159b26a23291e755be54ac03be23}
+      \strng{bibnamehash}{3983159b26a23291e755be54ac03be23}
+      \strng{authorbibnamehash}{3983159b26a23291e755be54ac03be23}
+      \strng{authornamehash}{3983159b26a23291e755be54ac03be23}
+      \strng{authorfullhash}{3983159b26a23291e755be54ac03be23}
+      \strng{authorfullhashraw}{3983159b26a23291e755be54ac03be23}
+      \field{labelalpha}{Dat23}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Over 70\% of AWS customers use serverless solutions}
+      \field{title}{The State of Serverless 2023}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.datadoghq.com/state-of-serverless/
+      \endverb
+      \verb{url}
+      \verb https://www.datadoghq.com/state-of-serverless/
+      \endverb
+    \endentry
+    \entry{datam2024serverless}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2267bf5f9cbf4e73fb30caa7e7b30d93}{%
+           family={{DataM Intelligence}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{fullhash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{fullhashraw}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{bibnamehash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{authorbibnamehash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{authornamehash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{authorfullhash}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \strng{authorfullhashraw}{2267bf5f9cbf4e73fb30caa7e7b30d93}
+      \field{labelalpha}{Dat24}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Growing with a CAGR of 20.6\% during the forecast period 2024-2031}
+      \field{title}{Global Serverless Computing Market reached US\$ 9.3 Billion in 2023 and is expected to reach US\$ 40.9 Billion by 2031}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.datamintelligence.com/research-report/serverless-computing-market
+      \endverb
+      \verb{url}
+      \verb https://www.datamintelligence.com/research-report/serverless-computing-market
+      \endverb
+    \endentry
     \entry{jin2019when}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=1d2adb233db4813602937997f607eeff}{%
@@ -805,7 +863,6 @@
       \range{pages}{8}
     \endentry
   \enddatalist
-  \missing{jeon2019cloudsim}
 \endrefsection
 \endinput
 

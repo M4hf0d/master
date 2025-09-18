@@ -13,6 +13,4 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces \xpg@aux {}{english}faas-sim modular architecture featuring SimPy-based simulation engine with Ether network integration for geo-distributed edge-cloud FaaS environments \blx@tocontentsinit {0}\cite {boughzala2022faassim}.}}{23}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces \xpg@aux {}{english}EdgeFaaS architecture featuring distributed edge orchestration with dynamic infrastructure management and energy consumption tracking \blx@tocontentsinit {0}\cite {li2022edgefaas}.}}{23}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \xpg@aux {}{english}Summary of key findings from the FaaS simulation framework evaluation}}{32}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \xpg@aux {}{english}Future research directions for advancing FaaS-edge simulation capabilities}}{33}{figure.caption.15}%
 \addvspace {10\p@ }

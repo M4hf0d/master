@@ -1,17 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'main.blg'
-[100] biber-MSWIN64:342> INFO - === 
-[132] Biber.pm:421> INFO - Reading 'main.bcf'
-[235] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
-[251] Biber.pm:4487> INFO - Processing section 0
-[264] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
-[324] bibtex.pm:1713> INFO - LaTeX decoding ...
-[370] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
-[600] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[600] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[601] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[601] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[641] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[662] bbl.pm:779> INFO - Output to main.bbl
-[663] Biber.pm:132> WARN - I didn't find a database entry for 'jeon2019cloudsim' (section 0)
-[663] Biber.pm:134> INFO - WARNINGS: 1
+[1] Config.pm:331> INFO - Logfile is 'main.blg'
+[124] biber-MSWIN64:342> INFO - === 
+[172] Biber.pm:421> INFO - Reading 'main.bcf'
+[324] Biber.pm:1002> INFO - Found 18 citekeys in bib section 0
+[345] Biber.pm:4487> INFO - Processing section 0
+[358] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
+[430] bibtex.pm:1713> INFO - LaTeX decoding ...
+[489] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
+[829] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[829] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[830] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[830] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[871] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[890] bbl.pm:779> INFO - Output to main.bbl

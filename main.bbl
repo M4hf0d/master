@@ -343,6 +343,50 @@
       \field{pages}{711\bibrangedash 720}
       \range{pages}{10}
     \endentry
+    \entry{chaudhry2020improved}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ede4eb5af1f9b0f3a2a7d91a1f5c98e6}{%
+           family={Chaudhry},
+           familyi={C\bibinitperiod},
+           given={Saqib\bibnamedelima Rasool},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=1c01a5443d6e847c3710d625472b9445}{%
+           family={Palade},
+           familyi={P\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa31c394175eb0265deecb257bc4a69c}{%
+           family={Kazmi},
+           familyi={K\bibinitperiod},
+           given={Aqeel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=244064aa550c980631321ce71025e1ef}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Siobhán},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dfcfb1e8b2410eb4ca5e20d8ebb6ade}
+      \strng{fullhash}{473d6849fd0303239e923cb410c922ae}
+      \strng{fullhashraw}{473d6849fd0303239e923cb410c922ae}
+      \strng{bibnamehash}{9dfcfb1e8b2410eb4ca5e20d8ebb6ade}
+      \strng{authorbibnamehash}{9dfcfb1e8b2410eb4ca5e20d8ebb6ade}
+      \strng{authornamehash}{9dfcfb1e8b2410eb4ca5e20d8ebb6ade}
+      \strng{authorfullhash}{473d6849fd0303239e923cb410c922ae}
+      \strng{authorfullhashraw}{473d6849fd0303239e923cb410c922ae}
+      \field{labelalpha}{Cha+20}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{number}{10}
+      \field{title}{Improved QoS at the edge using serverless computing to deploy virtual network functions}
+      \field{volume}{7}
+      \field{year}{2020}
+      \field{pages}{10673\bibrangedash 10683}
+      \range{pages}{11}
+    \endentry
     \entry{das2022serverlesssimpro}{article}{}{}
       \name{author}{3}{}{%
         {{hash=a065b35a8f55cb48196cfabb310dbc7c}{%
@@ -805,7 +849,6 @@
       \range{pages}{8}
     \endentry
   \enddatalist
-  \missing{jeon2019cloudsim}
 \endrefsection
 \endinput
 

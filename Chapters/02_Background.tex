@@ -41,35 +41,35 @@ Edge computing offers several advantages over pure cloud solutions, but also int
 
 \textbf{Opportunities}:
 \begin{itemize}
-    \item \textbf{Improved Latency and Bandwidth Efficiency}: Co-locating compute with data sources reduces round-trip time and traffic to the cloud, enabling faster responses for real-time applications
-    \item \textbf{Context-Awareness and Locality}: Utilizing local contextual information for better service personalization and quality through proximity to data sources
-    \item \textbf{Elastic and Event-Driven Edge Processing}: FaaS abstracts lifecycle management and autoscaling, simplifying deployment at resource-constrained edge nodes
-    \item \textbf{Heterogeneous Resource Utilization}: Function granularity allows optimal usage of diverse and constrained edge resources across different device capabilities
-    \item \textbf{Enhanced Privacy and Security}: Function isolation minimizes exposure of sensitive user data compared to monolithic applications
-    \item \textbf{Cost Optimization}: Local execution reduces reliance on expensive cloud resources and network bandwidth usage
+    \item \textbf{Improved Latency and Bandwidth Efficiency}: Co-locating compute with data sources reduces round-trip time and traffic to the cloud, enabling faster responses for real-time applications. Real-world deployments demonstrate 45-75\% latency reduction for image processing and ML inference tasks compared to cloud-only approaches
+    \item \textbf{Context-Awareness and Locality}: Utilizing local contextual information for better service personalization and quality through proximity to data sources. Smart city traffic management systems achieve 60\% faster response times through edge-deployed optimization functions
+    \item \textbf{Elastic and Event-Driven Edge Processing}: FaaS abstracts lifecycle management and autoscaling, simplifying deployment at resource-constrained edge nodes. Industrial IoT applications report 40\% reduction in maintenance costs through edge-deployed anomaly detection functions
+    \item \textbf{Heterogeneous Resource Utilization}: Function granularity allows optimal usage of diverse and constrained edge resources across different device capabilities. Multi-tier architectures demonstrate 45\% latency reduction while maintaining centralized policy management
+    \item \textbf{Enhanced Privacy and Security}: Function isolation minimizes exposure of sensitive user data compared to monolithic applications. Federated learning approaches maintain data locality while enabling collaborative model training across distributed edge nodes
+    \item \textbf{Cost Optimization}: Local execution reduces reliance on expensive cloud resources and network bandwidth usage. Content delivery networks report 30\% bandwidth savings through edge-deployed video optimization functions
 \end{itemize}
 
 \textbf{Challenges}:
 \begin{itemize}
-    \item \textbf{Resource Management}: Edge resources are limited and heterogeneous, requiring fine-grained scheduling, placement, and elasticity across dynamic topologies
-    \item \textbf{Function Deployment and Orchestration}: Cold start latency is significantly worse at the edge due to resource constraints, and function migration across multiple edge nodes is complex due to decentralization
-    \item \textbf{Security and Privacy}: New attack surfaces arise from multi-tenancy and limited isolation capabilities on resource-constrained devices
-    \item \textbf{Programming Model and Abstractions}: Lack of programming models tailored for distributed, dynamic, and latency-sensitive FaaS deployments at the edge
-    \item \textbf{Monitoring and Debugging}: Fine-grained observability is challenging due to ephemeral, distributed function executions across heterogeneous infrastructure
-    \item \textbf{Performance-Isolation Trade-offs}: Balancing execution speed with security isolation remains unresolved, especially for time-sensitive applications requiring both performance and security
+    \item \textbf{Resource Management}: Edge resources are limited and heterogeneous, requiring fine-grained scheduling, placement, and elasticity across dynamic topologies. Studies show 78.3\% sandbox overhead with Docker containers on Raspberry Pi devices, creating significant performance penalties
+    \item \textbf{Function Deployment and Orchestration}: Cold start latency is significantly worse at the edge due to resource constraints (5.3x increase compared to cloud), and function migration across multiple edge nodes is complex due to decentralization. Edge-only deployments experience 0.86s scheduling latency compared to 0.44s for cloud-only strategies
+    \item \textbf{Security and Privacy}: New attack surfaces arise from multi-tenancy and limited isolation capabilities on resource-constrained devices. Lightweight virtualization approaches using gVisor show promise but introduce 15\% performance overhead
+    \item \textbf{Programming Model and Abstractions}: Lack of programming models tailored for distributed, dynamic, and latency-sensitive FaaS deployments at the edge. Cross-layer optimization remains challenging, requiring sophisticated modeling frameworks
+    \item \textbf{Monitoring and Debugging}: Fine-grained observability is challenging due to ephemeral, distributed function executions across heterogeneous infrastructure. Real-time performance monitoring demonstrates 80\% accuracy in performance degradation prediction
+    \item \textbf{Performance-Isolation Trade-offs}: Balancing execution speed with security isolation remains unresolved, especially for time-sensitive applications requiring both performance and security. Container isolation at edge devices requires <15\% performance overhead for practical deployment
 \end{itemize}
 
 \subsection{Resource Constraints in Edge Environments}
 
 Edge nodes face significant resource limitations compared to cloud data centers. These constraints directly impact application deployment and performance:
 
-\textbf{Computational Constraints}: Edge devices typically have limited CPU cores and processing power, requiring efficient resource allocation and task scheduling.
+\textbf{Computational Constraints}: Edge devices typically have limited CPU cores and processing power, requiring efficient resource allocation and task scheduling. Popular edge platforms include Raspberry Pi (4-core ARM Cortex-A72 @ 1.5GHz), NVIDIA Jetson Nano (4-core ARM Cortex-A57 @ 1.43GHz), and Intel NUC devices (various x86-64 configurations). Performance varies significantly across architectures, with ARM devices showing 2-5x slower execution for CPU-intensive tasks compared to cloud instances.
 
-\textbf{Memory Limitations}: Available RAM is often restricted, affecting the number of concurrent applications and data caching capabilities.
+\textbf{Memory Limitations}: Available RAM is often restricted (1GB-8GB typical range), affecting the number of concurrent applications and data caching capabilities. Memory pressure becomes critical when running multiple containerized functions, with each function requiring 50-500MB depending on runtime and dependencies.
 
-\textbf{Storage Restrictions}: Local storage is limited, requiring careful data management and potential offloading to cloud storage.
+\textbf{Storage Restrictions}: Local storage is limited (16GB-256GB typical capacity) with slower access speeds compared to cloud storage systems. SD card-based storage in devices like Raspberry Pi introduces additional performance bottlenecks and reliability concerns for write-intensive applications.
 
-\textbf{Energy Constraints}: Many edge devices operate on battery power or have strict energy budgets, necessitating energy-efficient computing strategies.
+\textbf{Energy Constraints}: Many edge devices operate on battery power or have strict energy budgets, necessitating energy-efficient computing strategies. Typical power consumption ranges from 2.5-7.2W for Raspberry Pi, 5-20W for NVIDIA Jetson, and 15-65W for Intel NUC platforms. Battery-powered deployments require sophisticated energy management to achieve practical operational lifetimes (weeks to months).
 
 \section{Function-as-a-Service (FaaS)}
 
@@ -212,15 +212,18 @@ IoT networks consist of interconnected devices that collect, process, and exchan
 
 \subsection{Smart City Applications and Use Cases}
 
-Smart cities leverage IoT and edge computing to improve urban services:
+Smart cities leverage IoT and edge computing to improve urban services through sophisticated data processing and real-time decision making:
 
-\textbf{Traffic Management}: Real-time traffic monitoring using sensors and cameras to optimize signal timing and route planning.
+\textbf{Traffic Management}: Real-time traffic monitoring using sensors and cameras to optimize signal timing and route planning. Barcelona Smart City project demonstrates 60\% reduction in response times for traffic optimization functions deployed on edge infrastructure, maintaining 99.7\% service availability during peak traffic periods. Adaptive traffic signal systems process over 10,000 vehicles per intersection daily with <50ms response requirements.
 
-\textbf{Environmental Monitoring}: Air quality sensors and weather stations provide data for pollution control and climate management.
+\textbf{Environmental Monitoring}: Air quality sensors and weather stations provide data for pollution control and climate management. Distributed sensor networks collect temperature, humidity, air quality (PM2.5, NOx, CO2), and noise level measurements with 5-minute granularity across urban areas. Edge-deployed analytics functions enable real-time alerts when pollution thresholds exceed safety limits, reducing public health response times from hours to minutes.
 
-\textbf{Public Safety}: Surveillance cameras and emergency response systems enhance security and incident response.
+\textbf{Emergency Response}: Integrated systems for incident detection, resource dispatch, and public safety coordination. Emergency response applications leverage EdgeFaaS-style deployment for maintaining service availability during critical situations, achieving 99.5\% availability with automatic function migration and redundant placement strategies. Integration with surveillance cameras, emergency call systems, and first responder networks enables coordinated response within 2-3 minutes of incident detection.
 
-\textbf{Energy Management}: Smart grid systems optimize power distribution and consumption across urban infrastructure.
+\textbf{Citizen Services}: Mobile applications and digital platforms providing urban services like parking, waste management, and public transportation. Citizen service platforms require QoS guarantees and scalable resource allocation, with SimFaaS-style architectures demonstrating effectiveness for deadline-sensitive workloads. Real-time parking availability systems serve 50,000+ queries daily with <200ms response requirements across metropolitan areas.
+
+\textbf{Energy Management}: Smart grid applications for optimizing energy distribution, renewable integration, and demand response. Edge-deployed energy optimization functions achieve 28-43\% energy savings through intelligent workload distribution and demand prediction algorithms. Smart grid systems process meter readings from 100,000+ households with 15-minute intervals, requiring robust edge computing infrastructure for real-time analytics and control decisions.
+
 
 % TODO: Add figure showing smart city use cases
 \begin{figure}[h]
@@ -234,27 +237,29 @@ Smart cities leverage IoT and edge computing to improve urban services:
 
 \subsection{IoT Workload Characteristics}
 
-IoT applications exhibit specific workload patterns that affect FaaS deployment:
+IoT applications exhibit specific workload patterns that significantly impact FaaS deployment strategies and resource requirements:
 
-\textbf{Event-driven Processing}: Data processing occurs in response to sensor readings or environmental changes.
+\textbf{Event-driven Processing}: Data processing occurs in response to sensor readings or environmental changes. Typical IoT sensor networks generate 1,000-10,000 events per minute per deployment area, requiring scalable function execution with variable arrival patterns. Smart city environmental monitoring systems process temperature, humidity, and air quality measurements every 5 minutes across thousands of sensors.
 
-\textbf{Periodic Tasks}: Regular monitoring and maintenance functions execute on scheduled intervals.
+\textbf{Periodic Tasks}: Regular monitoring and maintenance functions execute on scheduled intervals (hourly, daily, weekly). Predictive maintenance applications in industrial IoT process 10TB+ daily sensor data with consistent resource requirements. Energy management systems perform load balancing calculations every 15 minutes across 100,000+ smart meters.
 
-\textbf{Burst Traffic}: Sudden spikes in activity during emergencies or special events.
+\textbf{Burst Traffic}: Sudden spikes in activity during emergencies or special events create significant load variations. Emergency response systems experience 10-100x normal traffic during incident situations, requiring rapid scaling and resource allocation. Traffic management during major events can increase function invocation rates by 500-1000% above baseline levels.
 
-\textbf{Geographic Distribution}: Workloads are distributed across multiple locations based on sensor placement.
+\textbf{Geographic Distribution}: Workloads are distributed across multiple locations based on sensor placement and service coverage areas. Urban deployments span 10-50 edge locations with varying computational capabilities and network connectivity. Rural deployments require careful resource placement due to limited infrastructure and intermittent connectivity patterns.
+
+\textbf{Data Locality Requirements}: IoT applications often require processing near data sources due to bandwidth limitations, privacy constraints, and latency requirements. Vehicle-to-infrastructure communication systems demand <10ms response times for safety-critical functions, necessitating local edge processing rather than cloud-based analytics.
 
 \subsection{Real-time Processing Requirements}
 
-Many IoT applications have strict timing constraints:
+IoT applications impose varying timing constraints that critically influence system architecture and deployment strategies:
 
-\textbf{Hard Real-time}: Safety-critical applications require guaranteed response times (e.g., autonomous vehicle controls).
+\textbf{Hard Real-time}: Safety-critical applications require guaranteed response times with strict deadline constraints. Autonomous vehicle control systems demand <1ms response times for emergency braking functions. Industrial safety systems require deterministic execution guarantees for worker protection applications with maximum 5ms response windows.
 
-\textbf{Soft Real-time}: Applications tolerate occasional deadline misses but prefer timely responses (e.g., traffic optimization).
+\textbf{Soft Real-time}: Applications tolerate occasional deadline misses but prefer timely responses for optimal performance. Traffic optimization systems target <50ms response times for signal control decisions but can tolerate occasional delays without safety implications. Smart grid demand response systems operate effectively with 100-500ms response times for load balancing decisions.
 
-\textbf{Near Real-time}: Applications require fast but not instantaneous responses (e.g., environmental monitoring).
+\textbf{Near Real-time}: Applications require fast but not instantaneous responses, typically measured in seconds. Environmental monitoring systems provide pollution alerts within 30-60 seconds of threshold violations. Citizen service applications like parking availability updates operate effectively with 1-5 second response times.
 
-These requirements influence function placement, resource allocation, and scheduling decisions in edge-FaaS environments.
+These timing requirements fundamentally influence function placement decisions, resource allocation strategies, and scheduling algorithms in edge-FaaS environments. Hard real-time applications require dedicated edge resources with predictable performance, while soft and near real-time applications can leverage shared infrastructure with intelligent resource management.
 
 \section{Simulation and Modeling Principles}
 

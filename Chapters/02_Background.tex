@@ -1,3 +1,4 @@
+\part{Basic Concepts}
 \chapter{Basic Concepts}
 
 \section{Introduction}
@@ -8,7 +9,7 @@ This chapter presents the fundamental concepts necessary for understanding FaaS 
 
 \subsection{Definition and Characteristics}
 
-Edge computing brings computation and data storage closer to the location where data is generated and consumed~\cite{aslanpour2021serverless}. Unlike traditional cloud computing, which centralizes processing in remote data centers, edge computing distributes computational resources across geographically dispersed nodes at the network edge.
+Edge computing brings computation and data storage closer to the location where data is generated and consumed~\cite{aslanpour2021serverless}. Unlike traditional cloud computing, which centralizes processing in remote data centers, edge computing distributes computational resources across geographically dispersed nodes at the network edge, as shown in Figure~\ref{fig:edge_architecture}.
 
 Key characteristics of edge computing include:
 \begin{itemize}
@@ -21,7 +22,7 @@ Key characteristics of edge computing include:
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{Assets/Architecture-of-edge-computing.png}
-    \caption{\small Edge Computing Architecture ~\cite{belcastro2023edge}}
+    \caption{\small The edge-cloud continuum architecture. ~\cite{belcastro2023edge}}
     \label{fig:edge_architecture}
 \end{figure}
 
@@ -109,6 +110,14 @@ Key FaaS characteristics include:
 
 FaaS platforms use containers to provide isolated execution environments for functions. The container lifecycle involves several stages:
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/Life-cycle-state-diagram-of-a-function-instance.png}
+    \caption{\small Container Lifecycle in FaaS ~\cite{moreno2023latency}}
+    \label{fig:container_lifecycle}
+\end{figure}
+
+
 \textbf{Container Creation}: New containers are instantiated when functions are first invoked or when existing containers are unavailable.
 
 \textbf{Function Execution}: The function code executes within the container environment with allocated resources.
@@ -116,13 +125,6 @@ FaaS platforms use containers to provide isolated execution environments for fun
 \textbf{Container Reuse}: Containers may be kept warm between invocations to reduce startup overhead.
 
 \textbf{Container Termination}: Idle containers are eventually terminated to free resources.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{assets/Life-cycle-state-diagram-of-a-function-instance.png}
-    \caption{\small Container Lifecycle in FaaS ~\cite{moreno2023latency}}
-    \label{fig:container_lifecycle}
-\end{figure}
 
 
 \subsection{Cold Start and Warm Start Mechanisms}

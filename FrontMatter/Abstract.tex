@@ -2,11 +2,81 @@
 \vspace*{4cm}
 \begin{center}
     {\Large\bf Abstract}
-\end{center} \vskip 0.5cm \vskip 0.5cm
-\lipsum[1] \\
+\end{center} \vskip 0.5cm
+
+Serverless computing, particularly Function-as-a-Service (FaaS), has emerged as a transformative paradigm experiencing unprecedented growth with market projections of 340\% expansion between 2023-2031. The convergence of FaaS with edge computing presents significant opportunities for distributed applications, enabling real-time processing with reduced latency and bandwidth usage. However, the development and optimization of FaaS-edge solutions face a critical challenge: the shortage of appropriate simulation tools for evaluating performance, resource management, and deployment strategies in realistic edge environments.
+
+This thesis investigates: \textit{Which existing FaaS simulation framework is most suitable for simulating FaaS at Edge?} and more concretely, which is more suitable for smart city scenarios. Through systematic evaluation of six prominent simulation frameworks ServerlessSimPro, faas-sim, EdgeFaaS, SimFaaS, MFS, and CloudSimSC this research establishes a comprehensive analysis of current simulation capabilities and limitations for edge-deployed FaaS applications.
+
+The study develops a rigorous evaluation framework examining five critical criteria: resource usage modeling, edge computing support, network modeling sophistication, system configurability, and validation accuracy. Applied to both cloud-centric and edge-oriented simulators, this analysis reveals significant gaps in current simulation capabilities, particularly in comprehensive energy modeling for battery-powered edge devices and realistic network modeling for distributed edge topologies.
+
+Four essential requirements for edge FaaS simulation are identified through analysis of edge computing deployment characteristics: trace-driven accuracy, robust network modeling, high configurability, and comprehensive energy modeling. The comparative evaluation demonstrates that no existing simulator comprehensively addresses all requirements within a single platform, necessitating either framework extensions or multi-tool approaches.
+
+faas-sim emerges as as the most promising foundation for edge FaaS research, offering superior trace-driven accuracy (<7\% error rates compared to real-world deployments), sophisticated network modeling through Ether integration, and high configurability via Python-based architecture. Despite lacking built-in energy modeling capabilities, faas-sim's strengths in trace-driven simulation and network modeling, combined with its extensible design, make it the most suitable platform for enhancement with comprehensive energy tracking capabilities.
+
+The research contributes a systematic evaluation methodology for FaaS simulator assessment, establishes edge FaaS simulation requirements framework, and provides evidence-based recommendations for simulator selection based on research context and application domains. These contributions address critical gaps in current literature and establish clear guidelines for advancing simulation capabilities in serverless edge computing.
+
+Future research directions include implementing comprehensive energy modeling within faas-sim, conducting empirical validation studies comparing simulation predictions with actual edge deployments, and expanding simulation capabilities to diverse edge computing scenarios including smart cities, industrial IoT, and autonomous systems. As edge computing technologies continue advancing, the simulation frameworks evaluated through this research will play crucial roles in developing next-generation distributed serverless applications.
 
 \providecommand{\keywords}[1] {
-  \small	
+  \small
   \textbf{\textit{Keywords---}} #1
 }
-\keywords{keyword 1, keyword 2}
+\keywords{Serverless Computing, Function-as-a-Service, Edge Computing, Smart Cities, Simulation Frameworks, Internet of Things, Network Modeling, Energy Modeling}
+
+\newpage
+
+% French Abstract
+\vspace*{4cm}
+\begin{center}
+    {\Large\bf Résumé}
+\end{center} \vskip 0.5cm
+
+L'informatique sans serveur, en particulier la Function-as-a-Service (FaaS), est devenue un paradigme transformateur connaissant une croissance sans précédent avec des projections de marché de 340\% d'expansion entre 2023-2031. La convergence de FaaS avec l'informatique de périphérie présente des opportunités significatives pour les applications distribuées, permettant un traitement en temps réel avec une latence réduite et une utilisation de bande passante optimisée. Cependant, le développement et l'optimisation des solutions FaaS-edge font face à un défi critique : la pénurie d'outils de simulation appropriés pour évaluer les performances, la gestion des ressources et les stratégies de déploiement dans des environnements de périphérie réalistes.
+
+Cette thèse aborde la question : \textit{Quel framework de simulation FaaS existant est le plus adapté pour simuler FaaS à l'edge ?} et plus concrètement, lequel est le plus adapté pour les scénarios de villes intelligentes. À travers une évaluation systématique de six frameworks de simulation proéminents ServerlessSimPro, faas-sim, EdgeFaaS, SimFaaS, MFS, et CloudSimSC cette recherche établit une analyse complète des capacités et limitations actuelles de simulation pour les applications FaaS déployées à la périphérie.
+
+L'étude développe un cadre d'évaluation rigoureux examinant cinq critères critiques : modélisation de l'utilisation des ressources, support de l'informatique de périphérie, sophistication de la modélisation réseau, configurabilité du système, et précision de validation. Appliquée aux simulateurs centrés sur le cloud et orientés périphérie, cette analyse révèle des lacunes significatives dans les capacités actuelles de simulation, particulièrement dans la modélisation énergétique complète pour les dispositifs de périphérie alimentés par batterie.
+
+Quatre exigences essentielles pour la simulation FaaS à la périphérie sont identifiées à travers l'analyse des caractéristiques de déploiement informatique de périphérie : précision basée sur les traces, modélisation réseau robuste, haute configurabilité, et modélisation énergétique complète. L'évaluation comparative démontre qu'aucun simulateur existant n'aborde de manière exhaustive toutes les exigences au sein d'une seule plateforme, nécessitant soit des extensions de framework soit des approches multi-outils.
+
+faas-sim émerge comme la fondation optimale pour la recherche FaaS de périphérie, offrant une précision supérieure basée sur les traces (<7\% de taux d'erreur comparé aux déploiements réels), une modélisation réseau sophistiquée à travers l'intégration Ether, et une haute configurabilité via une architecture basée sur Python. Malgré l'absence de capacités de modélisation énergétique intégrées, les forces de faas-sim dans la simulation basée sur les traces et la modélisation réseau, combinées avec sa conception extensible, en font la plateforme la plus adaptée pour l'amélioration avec des capacités de suivi énergétique complet.
+
+La recherche contribue une méthodologie d'évaluation systématique pour l'évaluation des simulateurs FaaS, établit un cadre d'exigences de simulation FaaS de périphérie, et fournit des recommandations basées sur des preuves pour la sélection de simulateurs selon le contexte de recherche et les domaines d'application. Ces contributions abordent des lacunes critiques dans la littérature actuelle et établissent des directives claires pour faire progresser les capacités de simulation dans l'informatique sans serveur de périphérie.
+
+Les directions de recherche future incluent l'implémentation de modélisation énergétique complète au sein de faas-sim, la conduite d'études de validation empiriques comparant les prédictions de simulation avec les déploiements réels de périphérie, et l'expansion des capacités de simulation à divers scénarios informatique de périphérie incluant les villes intelligentes, l'IoT industriel, et les systèmes autonomes. Alors que les technologies d'informatique de périphérie continuent de progresser, les frameworks de simulation évalués à travers cette recherche joueront des rôles cruciaux dans le développement d'applications sans serveur distribuées de nouvelle génération.
+
+\providecommand{\keywordsfr}[1] {
+  \small
+  \textbf{\textit{Mots-clés---}} #1
+}
+\keywordsfr{Informatique sans Serveur, Function-as-a-Service, Informatique de Périphérie, Villes Intelligentes, Frameworks de Simulation, Internet des Objets, Modélisation Réseau, Modélisation Énergétique}
+
+\newpage
+\selectlanguage{arabic}
+\vspace*{4cm}
+\begin{center}
+    {\Large\bf ملخص}
+\end{center} \vskip 0.5cm
+
+\selectlanguage{arabic}
+لقد برزت الحوسبة اللاخادمية، وخاصة الوظائف كخدمة (FaaS)، كنموذج تحويلي يشهد نمواً غير مسبوق مع توقعات السوق بتوسع بنسبة 340\% بين عامي 2023-2031. إن تقارب FaaS مع الحوسبة الطرفية يقدم فرصاً كبيرة للتطبيقات الموزعة، مما يمكن من المعالجة في الوقت الفعلي مع تقليل زمن الاستجابة واستخدام النطاق الترددي. ومع ذلك، فإن تطوير وتحسين حلول FaaS-edge تواجه تحدياً حرجاً: نقص أدوات المحاكاة المناسبة لتقييم الأداء وإدارة الموارد واستراتيجيات النشر في بيئات طرفية واقعية.
+
+تتناول هذه الأطروحة السؤال البحثي : \textit{أي إطار عمل محاكاة FaaS موجود هو الأنسب لمحاكاة FaaS في الحوسبة الطرفية؟} وبشكل أكثر تحديداً، أيهم الأنسب لسيناريوهات المدن الذكية. من خلال التقييم المنهجي لستة أطر عمل محاكاة بارزة ServerlessSimPro، faas-sim، EdgeFaaS، SimFaaS، MFS، وCloudSimSC يقدم هذا البحث تحليلاً شاملاً للقدرات والقيود الحالية للمحاكاة لتطبيقات FaaS المنشورة في الحوسبة الطرفية.
+
+تطور الدراسة إطار تقييم صارم يفحص خمسة معايير حرجة: نمذجة استخدام الموارد، دعم الحوسبة الطرفية، تطور نمذجة الشبكة، قابلية التكوين للنظام، ودقة التحقق. عند تطبيقها على محاكيات مركزة على السحابة وموجهة للحافة، يكشف هذا التحليل عن فجوات كبيرة في قدرات المحاكاة الحالية، خاصة في النمذجة الطاقوية الشاملة للأجهزة الطرفية التي تعمل بالبطارية.
+
+يتم تحديد أربعة متطلبات أساسية لمحاكاة FaaS في الحوسبة الطرفية من خلال تحليل خصائص نشر الحوسبة الطرفية: دقة مدفوعة بالآثار، نمذجة شبكة قوية، قابلية تكوين عالية، ونمذجة طاقوية شاملة. يوضح التقييم المقارن أن لا يوجد محاكي موجود يتناول بشكل شامل جميع المتطلبات ضمن منصة واحدة، مما يتطلب إما إضافات لأطر العمل أو أساليب متعددة الأدوات.
+
+يبرز faas-sim كأساس أمثل لبحث FaaS في الحوسبة الطرفية، مقدماً دقة فائقة مدفوعة بالآثار (<7\% معدل خطأ مقارنة بالنشر الفعلي)، نمذجة شبكة متطورة من خلال تكامل Ether، وقابلية تكوين عالية عبر معمارية قائمة على Python. رغم افتقاره لقدرات النمذجة الطاقوية المدمجة، فإن نقاط قوة faas-sim في المحاكاة المدفوعة بالآثار والنمذجة الشبكية، مقترنة بتصميمه القابل للتوسع، تجعله المنصة الأنسب للتحسين مع قدرات تتبع طاقوي شامل.
+
+يساهم البحث بمنهجية تقييم منهجية لتقييم محاكيات FaaS، ويؤسس إطار متطلبات محاكاة FaaS للحوسبة الطرفية، ويقدم توصيات قائمة على الأدلة لاختيار المحاكي بناءً على سياق البحث ومجالات التطبيق. هذه المساهمات تتناول فجوات حرجة في الأدبيات الحالية وتؤسس إرشادات واضحة لتطوير قدرات المحاكاة في الحوسبة اللاخادمية الطرفية.
+
+تتضمن اتجاهات البحث المستقبلية تنفيذ النمذجة الطاقوية الشاملة ضمن faas-sim، إجراء دراسات التحقق التجريبي مقارنة توقعات المحاكاة مع نشر الحوسبة الطرفية الفعلي، وتوسيع قدرات المحاكاة لسيناريوهات الحوسبة الطرفية المتنوعة بما في ذلك المدن الذكية، وإنترنت الأشياء الصناعي، والأنظمة المستقلة. بينما تستمر تقنيات الحوسبة الطرفية في التقدم، ستلعب أطر عمل المحاكاة المقيمة من خلال هذا البحث أدواراً حاسمة في تطوير تطبيقات لاخادمية موزعة من الجيل القادم.
+
+\providecommand{\keywordsar}[1] {
+  \small
+  \textbf{\textit{الكلمات المفتاحية---}} #1
+}
+\keywordsar{الحوسبة اللاخادمية، الوظائف كخدمة، الحوسبة الطرفية، المدن الذكية، أطر عمل المحاكاة، إنترنت الأشياء، نمذجة الشبكة، النمذجة الطاقوية}
+\selectlanguage{english}

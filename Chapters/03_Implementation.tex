@@ -1,6 +1,5 @@
-% Implementation
-\part{State of the art}
-
+% State of the Art
+\part{State of the Art}
 \chapter{State of the Art}
 
 \section{Introduction}
@@ -23,9 +22,9 @@ Cloud-centric simulators primarily target traditional cloud environments with ab
 
 ServerlessSimPro represents a comprehensive cloud-centric simulation platform designed for realistic serverless environment modeling \cite{das2022serverlesssimpro}. Built with a three-tier architecture encompassing Physical Machines (PMs), containers, and functions, the simulator utilizes real-world traces from the AzureFunctionsInvocationTrace2021 dataset to ensure high-fidelity modeling.
 
-The simulator's key strengths lie in its extensive scheduling algorithm support, including FirstFit, Linear Programming, and energy optimization strategies. ServerlessSimPro introduces pioneering energy consumption tracking—the first simulator to incorporate this critical metric for serverless computing. The platform supports sophisticated container lifecycle management with detailed modeling of cold starts, warm containers, and container migration capabilities.
+The simulator's key strengths lie in its extensive scheduling algorithm support, including FirstFit, Linear Programming, and energy optimization strategies. ServerlessSimPro introduces energy consumption tracking being the first simulator to incorporate this critical metric for serverless computing. The platform supports sophisticated container lifecycle management with detailed modeling of cold starts, warm containers, and container migration capabilities.
 
-Experimental results demonstrate the simulator's effectiveness in optimizing resource allocation strategies. The Linear Programming deployment approach achieves approximately 5\% cost reduction compared to FirstFit algorithms while improving scalability. Energy optimization using dynamic programming-based heuristics significantly reduces both execution time and power consumption. Container migration strategies, including Balance-Aware Placement (BACP) and Adaptive Threshold Migration (ATCM), ensure efficient load distribution and resource consolidation.
+Published experimental results demonstrate the simulator's effectiveness in optimizing resource allocation strategies. The Linear Programming deployment approach achieves approximately 5\% cost reduction compared to FirstFit algorithms while improving scalability. Energy optimization using dynamic programming-based heuristics significantly reduces both execution time and power consumption. Container migration strategies, including Balance-Aware Placement (BACP) and Adaptive Threshold Migration (ATCM), ensure efficient load distribution and resource consolidation.
 
 However, ServerlessSimPro's primary limitation lies in its cloud-centric design philosophy, lacking explicit support for edge computing environments. The simulator does not model edge-specific constraints such as device heterogeneity, intermittent connectivity, or resource limitations typical of IoT deployments.
 
@@ -33,9 +32,19 @@ However, ServerlessSimPro's primary limitation lies in its cloud-centric design 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{assets/serverlesssimproArch.jpg}
-\caption{ServerlessSimPro three-tier architecture featuring Physical Machines, containers, and functions with comprehensive energy consumption tracking and optimization strategies \cite{das2022serverlesssimpro}.}
+\caption{ServerlessSimPro three-tier architecture \cite{das2022serverlesssimpro}.}
 \label{fig:serverlesssimpro-architecture}
 \end{figure}
+
+The ServerlessSimPro architecture in Figure~\ref{fig:serverlesssimpro-architecture} demonstrates a comprehensive three-tier model for serverless simulation with detailed request lifecycle management. When a function request arrives, it flows through the following architectural components:
+
+\textbf{Control Layer}: Acts as the primary orchestrator, receiving incoming requests and managing the entire system through event-driven execution mechanisms. This layer incorporates sophisticated scheduling algorithms for resource allocation, container deployment, container migration, container reuse, and queuing strategies. The automatic scaling component dynamically adjusts resources based on demand patterns, while comprehensive monitoring tracks performance metrics throughout the system.
+
+\textbf{Task Layer}: Transforms control layer decisions into executable tasks within the serverless environment. Key operations include processing requests, managing container lifecycle states (cold start, warm start, running, idle, and termination), and comprehensive logging for performance analysis. This layer implements discrete event simulation using min-heap structures for efficient task scheduling and periodic task management.
+
+\textbf{Resource Layer}: Encompasses the physical infrastructure with the PM-Container-Function three-tier model. Physical machines provide the foundational compute, memory, and energy resources. Containers serve as isolated execution environments with four distinct states (cold start, running, idle, dead), each configured with specific CPU and memory allocations. Functions represent the actual serverless workloads, executing within containers with arrival times and execution durations determined by real-world traces.
+
+The request lifecycle involves: (1) request arrival triggering control layer scheduling decisions, (2) task layer transformation into specific container operations, (3) resource allocation and container state management, (4) function execution within allocated containers, and (5) comprehensive metric collection including energy consumption, latency, and resource utilization. This architecture enables realistic simulation of serverless computing characteristics including cold starts, elastic scaling, and energy-aware resource management.
 
 
 
@@ -52,14 +61,35 @@ Nevertheless, MFS exhibits limited scheduling flexibility, employing relatively 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/Apache OpenWhisk architecture.png}
-\caption{MFS architecture featuring Apache OpenWhisk-based simulation with comprehensive container lifecycle tracking and performance metrics collection \cite{bermbach2019mfs, banaei2022etas}.}
+\caption{MFS architecture featuring Apache OpenWhisk \cite{bermbach2019mfs, banaei2022etas}.}
 \label{fig:mfs-architecture}
 \end{figure}
+
+The architecture in Figure~\ref{fig:mfs-architecture} demonstrates Apache OpenWhisk-based serverless simulation with discrete event-driven request processing. The simulation lifecycle follows these sequential stages:
+
+\textbf{Initialization}: Functions are generated with predefined attributes including submission time, resource requirements, and deadlines. All function arrival events are organized in a priority queue structure based on submission times.
+
+\textbf{Global Scheduling}: The Controller receives function arrival events and selects appropriate Physical Machines using configurable scheduling strategies such as load balancing or resource utilization optimization.
+
+\textbf{Local Scheduling}: Selected PMs invoke local schedulers that check for available warm containers. If no warm container exists, new cold containers are instantiated, incurring cold start penalties.
+
+\textbf{Execution and Monitoring}: Functions execute within chosen containers while the system tracks comprehensive metrics including response time, waiting time, service time, throughput, and resource utilization for CPU, RAM, and GPU usage.
+
+\textbf{State Management}: Upon completion, container status updates maintain warm containers for specified periods to reduce future cold starts. Completion events are added to the event list for continued simulation processing.
+
+This architecture enables realistic modeling of OpenWhisk characteristics including container lifecycle management, resource allocation strategies, and performance metric collection essential for serverless computing research.
 
 \subsubsection{CloudSimSC}
 
 
 CloudSimSC extends the widely-used CloudSim framework to model serverless platforms, introducing FaaS-specific elements including function execution, auto-scaling policies, and scheduling algorithms \cite{mampage2021cloudsimsc}. The simulator provides a generalizable architecture supporting multiple execution styles including scale-per-request and request concurrency models.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Assets/cloudsimcs.png}
+\caption{CloudSimSC Class diagram  \cite{mampage2021cloudsimsc}.}
+\label{fig:cloudsimsc-architecture}
+\end{figure}
 
 The platform's strength lies in its flexible scheduling and scaling capabilities, offering various auto-scaling strategies for realistic workload handling. CloudSimSC supports configurable scheduling algorithms including Round Robin, Bin Packing, and First Fit approaches. The extensible architecture enables integration with future scheduling algorithms and provides provider-independent simulation capabilities.
 
@@ -67,12 +97,10 @@ CloudSimSC tracks essential performance metrics including function response time
 
 However, CloudSimSC suffers from limited real-world execution fidelity, failing to fully replicate cloud provider-specific execution behaviors such as AWS Lambda or Google Cloud Functions characteristics. The simulator employs simplified cost models that do not account for provider-specific billing mechanisms. Network simulation capabilities remain inadequate for IoT and edge computing scenarios, lacking support for dynamic topologies and edge-specific network constraints.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Assets/cloudsimcs.png}
-\caption{CloudSimSC Class diagram featuring CloudSim framework extension with FaaS-specific modules for auto-scaling and scheduling \cite{mampage2021cloudsimsc}.}
-\label{fig:cloudsimsc-architecture}
-\end{figure}
+The CloudSimSC class diagram in Figure~\ref{fig:cloudsimsc-architecture} reveals the architectural components for this simulator. \textbf{ServerlessController} orchestrates system-wide communication, managing user-provider negotiations and resource monitoring. \textbf{RequestLoadBalancer} implements sophisticated routing algorithms supporting both scale-per-request and container concurrency models with configurable selection policies. \textbf{ServerlessDatacenter} encapsulates infrastructure management, coordinating VM clusters and container lifecycle operations. \textbf{FunctionScheduler} optimizes container-to-VM placement using Round Robin, Bin Packing, and First Fit strategies for multi-tenant environments. \textbf{FunctionAutoScaler} delivers dynamic resource management through horizontal and vertical scaling policies based on threshold monitoring and workload prediction. These interconnected components enable comprehensive simulation of serverless computing characteristics while maintaining CloudSim's extensible architecture for research experimentation.
+
+
+
 
 \subsection{Edge-Oriented FaaS Simulators}
 
@@ -95,9 +123,11 @@ faas-sim demonstrates superior performance in smart city topology simulations, h
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{assets/faas-sim arch.png}
-\caption{faas-sim modular architecture featuring SimPy-based simulation engine with Ether network integration for geo-distributed edge-cloud FaaS environments \cite{boughzala2022faassim}.}
+\caption{faas-sim architecture\cite{boughzala2022faassim}.}
 \label{fig:faas-sim-architecture}
 \end{figure}
+
+The architecture in Figure~\ref{fig:faas-sim-architecture} illustrates the layered component organization with the FaaS System serving as the primary interface, connected to the central Environment orchestrator. The Environment coordinates three critical management components: Scheduler for placement decisions, Load Balancer for request routing, and Resource Monitor for system observation. Function Simulator components interface directly with the underlying Topology layer, which integrates Ether's network modeling capabilities to represent the distributed edge-cloud infrastructure.
 
 
 \subsubsection{EdgeFaaS}
@@ -152,8 +182,14 @@ The comparative analysis employs five critical criteria essential for selecting 
 \textbf{Validation and Accuracy}: Assessment of simulator validation against real-world deployments and accuracy in modeling actual system behavior. This includes trace-driven modeling capabilities and comparison with production environment results.
 
 \subsection{Simulator Assessment Methodology}
+Selection Criteria: Simulators were identified through systematic search of IEEE Xplore, ACM Digital Library, and Google Scholar using keywords "FaaS simulation," "serverless edge," and "edge computing simulation" (2019-2024). Six frameworks were selected based on: (1) active development, (2) edge computing relevance, (3) available documentation.
 
-The assessment methodology applies systematic evaluation across the defined criteria, utilizing both quantitative metrics and qualitative analysis derived from literature review and experimental evidence. Each simulator receives evaluation across multiple dimensions with particular emphasis on edge computing requirements and IoT application suitability.
+Evaluation Process: Each simulator was assessed against five criteria using a three-point scale:
+- Full/High: Complete feature implementation with documentation
+- Partial/Medium: Basic implementation with limitations
+- None/Low: Missing or inadequate implementation
+
+Evidence Sources: Assessments based on published papers, official documentation, and available source code analysis.
 
 \section{Simulator Evaluation Results}
 
@@ -163,7 +199,7 @@ The evaluation reveals distinct strengths and limitations across both cloud-cent
 
 However, cloud-centric simulators exhibit consistent limitations in edge computing support. None provide comprehensive modeling of edge-specific constraints including device heterogeneity, resource limitations, or intermittent connectivity patterns. Network modeling capabilities remain inadequate for edge-cloud scenarios, lacking support for dynamic topologies and distributed communication patterns essential for IoT applications.
 
-In contrast, edge-oriented simulators demonstrate superior capabilities for IoT and smart city applications through comprehensive edge environment modeling. faas-sim emerges as the most comprehensive solution, providing trace-driven modeling with less than 7\% error rates, extensive heterogeneous device support, and sophisticated network simulation through Ether integration. The simulator's modular architecture and co-simulation capabilities enable dynamic optimization and real-world validation.
+In contrast, edge-oriented simulators demonstrate superior capabilities for IoT and smart city applications through comprehensive edge environment modeling. faas-sim emerges as the most comprehensive solution, providing trace-driven modeling, extensive heterogeneous device support, and sophisticated network simulation through Ether integration. The simulator's modular architecture and co-simulation capabilities enable dynamic optimization and real-world validation.
 
 EdgeFaaS provides strong orchestration modeling with energy tracking capabilities, though limited by inadequate network modeling for comprehensive edge-cloud analysis. SimFaaS offers valuable QoS-aware scheduling for hybrid environments but lacks detailed container lifecycle modeling and energy metrics essential for comprehensive edge analysis.
 
@@ -322,17 +358,19 @@ The evaluation establishes clear criteria for simulator selection based on appli
 
 \subsection{faas-sim as Primary Choice}
 
-faas-sim emerges as the optimal choice for this research based on several critical factors:
+faas-sim emerges as the most suitable foundation for extension, having been selected based on the following strengths:
 
 \textbf{Trace-Driven Accuracy}: The simulator's use of real-world device and workload traces ensures high-fidelity modeling essential for realistic smart city simulations. Validation studies demonstrate less than 7\% error rates compared to real-world testbed deployments.
 
 \textbf{Heterogeneous Device Support}: Comprehensive support for diverse edge devices including Raspberry Pi, NVIDIA Jetson, Intel NUC, and specialized accelerators aligns with realistic smart city infrastructure deployments.
 
-\textbf{Network Modeling Sophistication}: Ether \cite{rausch2020ether}  integration provides flow-based network simulation suitable for modeling geo-distributed smart city topologies with realistic bandwidth and latency characteristics.
+\textbf{Network Modeling}: Ether \cite{rausch2020ether}  integration provides flow-based network simulation suitable for modeling geo-distributed smart city topologies with realistic bandwidth and latency characteristics.
 
 \textbf{Modular Architecture}: Extensible design supports custom component integration including scheduling algorithms, deployment strategies, and energy models essential for research customization.
 
 \textbf{Comprehensive Metrics}: Detailed resource usage tracking, performance metrics, and implied cost estimation provide necessary data for thorough analysis of FaaS-edge deployments.
+
+However, it requires energy modeling development to fully meet smart city requirements, making it the optimal platform for future enhancement rather than a complete current solution.
 
 \subsection{Limitations and Future Needs}
 

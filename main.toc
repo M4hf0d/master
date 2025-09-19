@@ -65,7 +65,6 @@
 \contentsline {section}{\numberline {3.7}Discussion}{35}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}Simulator Selection Rationale}{35}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}faas-sim as Primary Choice}{35}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Limitations and Future Needs}{36}{subsection.3.7.3}%
 \contentsline {section}{\numberline {3.8}Conclusion}{36}{section.3.8}%
 \contentsline {part}{IV\hspace {1em}Conclusion}{37}{part.4}%
 \contentsline {chapter}{\numberline {4}Conclusion}{38}{chapter.4}%

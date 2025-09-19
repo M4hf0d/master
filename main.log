@@ -733,4 +733,1326 @@ File: datatool-english-utf8.ldf 2025/03/12 v1.1 (NLCT)
 Package: glossary-hypernav 2025/05/14 v4.7 (NLCT)
 ) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2025/05/14 v4.7 (NLCT)
-\glslistdottedwidth=\s
+\glslistdottedwidth=\skip72
+) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2025/05/14 v4.7 (NLCT)
+ (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count393
+\LTcapwidth=\dimen274
+\LT@head=\box67
+\LT@firsthead=\box68
+\LT@foot=\box69
+\LT@lastfoot=\box70
+\LT@gbox=\box71
+\LT@cols=\count394
+\LT@rows=\count395
+\c@LT@tables=\count396
+\c@LT@chunks=\count397
+\LT@p@ftn=\toks51
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/longtable-xetex-bidi.def
+File: longtable-xetex-bidi.def 2025/01/05 v0.8 bidi adaptations for longtable package for XeTeX engine
+)
+\glsdescwidth=\skip77
+\glspagelistwidth=\skip78
+) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2025/05/14 v4.7 (NLCT)
+ (c:/texlive/2025/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
+\c@tracingst=\count398
+\ST@wd=\dimen275
+\ST@rightskip=\skip79
+\ST@leftskip=\skip80
+\ST@parfillskip=\skip81
+\ST@pageleft=\dimen276
+\ST@headht=\dimen277
+\ST@tailht=\dimen278
+\ST@pagesofar=\dimen279
+\ST@pboxht=\dimen280
+\ST@rowht=\dimen281
+\ST@prevht=\dimen282
+\ST@toadd=\dimen283
+\ST@dimen=\dimen284
+\ST@pbox=\box72
+)) (c:/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2025/05/14 v4.7 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count399
+\l__glossaries_tree_offset_dim=\dimen285
+\l__glossaries_tree_namewidth_dim=\dimen286
+\l__glossaries_tree_symbolwidth_dim=\dimen287
+\l__glossaries_tree_prenamesym_width_dim=\dimen288
+\l__glossaries_tree_presubnamesym_width_dim=\dimen289
+\l__glossaries_tree_namewidth_padding_dim=\dimen290
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen291
+\l__glossaries_tree_namesymbolwidth_dim=\dimen292
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen293
+\l__glossaries_tree_level_int=\count400
+\glstreeindent=\skip82
+))
+runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed safely (allowed).
+
+runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed safely (allowed).
+
+\glswrite=\write3
+\glo@main@file=\write4
+\openout4 = `main.glo'.
+
+Package glossaries Info: Writing glossary file main.glo on input line 49.
+\glo@acronym@file=\write5
+\openout5 = `main.acn'.
+
+Package glossaries Info: Writing glossary file main.acn on input line 49.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+ (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count401
+ (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count402
+\c@listtotal=\count403
+\c@listcount=\count404
+\c@liststart=\count405
+\c@liststop=\count406
+\c@citecount=\count407
+\c@citetotal=\count408
+\c@multicitecount=\count409
+\c@multicitetotal=\count410
+\c@instcount=\count411
+\c@maxnames=\count412
+\c@minnames=\count413
+\c@maxitems=\count414
+\c@minitems=\count415
+\c@citecounter=\count416
+\c@maxcitecounter=\count417
+\c@savedcitecounter=\count418
+\c@uniquelist=\count419
+\c@uniquename=\count420
+\c@refsection=\count421
+\c@refsegment=\count422
+\c@maxextratitle=\count423
+\c@maxextratitleyear=\count424
+\c@maxextraname=\count425
+\c@maxextradate=\count426
+\c@maxextraalpha=\count427
+\c@abbrvpenalty=\count428
+\c@highnamepenalty=\count429
+\c@lownamepenalty=\count430
+\c@maxparens=\count431
+\c@parenlevel=\count432
+\blx@tempcnta=\count433
+\blx@tempcntb=\count434
+\blx@tempcntc=\count435
+\c@blx@maxsection=\count436
+\blx@maxsegment@0=\count437
+\blx@notetype=\count438
+\blx@parenlevel@text=\count439
+\blx@parenlevel@foot=\count440
+\blx@sectionciteorder@0=\count441
+\blx@sectionciteorderinternal@0=\count442
+\blx@entrysetcounter=\count443
+\blx@biblioinstance=\count444
+\labelnumberwidth=\skip83
+\labelalphawidth=\skip84
+\biblabelsep=\skip85
+\bibitemsep=\skip86
+\bibnamesep=\skip87
+\bibinitsep=\skip88
+\bibparsep=\skip89
+\bibhang=\skip90
+\blx@bcfin=\read2
+\blx@bcfout=\write6
+\blx@langwohyphens=\language90
+\c@mincomprange=\count445
+\c@maxcomprange=\count446
+\c@mincompwidth=\count447
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic-verb.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count448
+\c@savedafterword=\count449
+\c@annotator=\count450
+\c@savedannotator=\count451
+\c@author=\count452
+\c@savedauthor=\count453
+\c@bookauthor=\count454
+\c@savedbookauthor=\count455
+\c@commentator=\count456
+\c@savedcommentator=\count457
+\c@editor=\count458
+\c@savededitor=\count459
+\c@editora=\count460
+\c@savededitora=\count461
+\c@editorb=\count462
+\c@savededitorb=\count463
+\c@editorc=\count464
+\c@savededitorc=\count465
+\c@foreword=\count466
+\c@savedforeword=\count467
+\c@holder=\count468
+\c@savedholder=\count469
+\c@introduction=\count470
+\c@savedintroduction=\count471
+\c@namea=\count472
+\c@savednamea=\count473
+\c@nameb=\count474
+\c@savednameb=\count475
+\c@namec=\count476
+\c@savednamec=\count477
+\c@translator=\count478
+\c@savedtranslator=\count479
+\c@shortauthor=\count480
+\c@savedshortauthor=\count481
+\c@shorteditor=\count482
+\c@savedshorteditor=\count483
+\c@labelname=\count484
+\c@savedlabelname=\count485
+\c@institution=\count486
+\c@savedinstitution=\count487
+\c@lista=\count488
+\c@savedlista=\count489
+\c@listb=\count490
+\c@savedlistb=\count491
+\c@listc=\count492
+\c@savedlistc=\count493
+\c@listd=\count494
+\c@savedlistd=\count495
+\c@liste=\count496
+\c@savedliste=\count497
+\c@listf=\count498
+\c@savedlistf=\count499
+\c@location=\count500
+\c@savedlocation=\count501
+\c@organization=\count502
+\c@savedorganization=\count503
+\c@origlocation=\count504
+\c@savedoriglocation=\count505
+\c@origpublisher=\count506
+\c@savedorigpublisher=\count507
+\c@publisher=\count508
+\c@savedpublisher=\count509
+\c@language=\count510
+\c@savedlanguage=\count511
+\c@origlanguage=\count512
+\c@savedoriglanguage=\count513
+\c@pageref=\count514
+\c@savedpageref=\count515
+\shorthandwidth=\skip91
+\shortjournalwidth=\skip92
+\shortserieswidth=\skip93
+\shorttitlewidth=\skip94
+\shortauthorwidth=\skip95
+\shorteditorwidth=\skip96
+\locallabelnumberwidth=\skip97
+\locallabelalphawidth=\skip98
+\localshorthandwidth=\skip99
+\localshortjournalwidth=\skip100
+\localshortserieswidth=\skip101
+\localshorttitlewidth=\skip102
+\localshortauthorwidth=\skip103
+\localshorteditorwidth=\skip104
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count516
+\c@textcitetotal=\count517
+\c@textcitemaxnames=\count518
+\c@biburlbigbreakpenalty=\count519
+\c@biburlbreakpenalty=\count520
+\c@biburlnumpenalty=\count521
+\c@biburlucpenalty=\count522
+\c@biburllcpenalty=\count523
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count524
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic-verb'...
+Package biblatex Info: ... file 'alphabetic-verb.bbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/alphabetic-verb.bbx
+File: alphabetic-verb.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count525
+\c@bbx:relatedtotal=\count526
+)))
+Package biblatex Info: Trying to load citation style 'alphabetic-verb'...
+Package biblatex Info: ... file 'alphabetic-verb.cbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/alphabetic-verb.cbx
+File: alphabetic-verb.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-07-20 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)) (c:/texlive/2025/texmf-dist/tex/generic/listofitems/listofitems.sty (c:/texlive/2025/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count527
+\loi_nestcnt=\count528
+)
+Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified sep char (CT)
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks52
+\pgfutil@tempdima=\dimen294
+\pgfutil@tempdimb=\dimen295
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box73
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks53
+\pgfkeys@temptoks=\toks54
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks55
+))
+\pgf@x=\dimen296
+\pgf@y=\dimen297
+\pgf@xa=\dimen298
+\pgf@ya=\dimen299
+\pgf@xb=\dimen300
+\pgf@yb=\dimen301
+\pgf@xc=\dimen302
+\pgf@yc=\dimen303
+\pgf@xd=\dimen304
+\pgf@yd=\dimen305
+\w@pgf@writea=\write7
+\r@pgf@reada=\read3
+\c@pgf@counta=\count529
+\c@pgf@countb=\count530
+\c@pgf@countc=\count531
+\c@pgf@countd=\count532
+\t@pgf@toka=\toks56
+\t@pgf@tokb=\toks57
+\t@pgf@tokc=\toks58
+\pgf@sys@id@count=\count533
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count534
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count535
+\pgfsyssoftpath@bigbuffer@items=\count536
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/pgfsys-xetex-bidi.def
+File: pgfsys-xetex-bidi.def 2025/01/05 v0.1 bidi adaptations for pgfsys package for XeTeX engine
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen306
+\pgfmath@count=\count537
+\pgfmath@box=\box74
+\pgfmath@toks=\toks59
+\pgfmath@stack@operand=\toks60
+\pgfmath@stack@operation=\toks61
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count538
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen307
+\pgf@picmaxx=\dimen308
+\pgf@picminy=\dimen309
+\pgf@picmaxy=\dimen310
+\pgf@pathminx=\dimen311
+\pgf@pathmaxx=\dimen312
+\pgf@pathminy=\dimen313
+\pgf@pathmaxy=\dimen314
+\pgf@xx=\dimen315
+\pgf@xy=\dimen316
+\pgf@yx=\dimen317
+\pgf@yy=\dimen318
+\pgf@zx=\dimen319
+\pgf@zy=\dimen320
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen321
+\pgf@path@lasty=\dimen322
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen323
+\pgf@shorten@start@additional=\dimen324
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box75
+\pgf@hbox=\box76
+\pgf@layerbox@main=\box77
+\pgf@picture@serial@count=\count539
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen325
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen326
+\pgf@pt@y=\dimen327
+\pgf@pt@temp=\dimen328
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen329
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen330
+\pgf@sys@shading@range@num=\count540
+\pgf@shadingcount=\count541
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box78
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box79
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen331
+\pgf@nodesepend=\dimen332
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen333
+\pgffor@skip=\dimen334
+\pgffor@stack=\toks62
+\pgffor@toks=\toks63
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count542
+\pgfplotmarksize=\dimen335
+)
+\tikz@lastx=\dimen336
+\tikz@lasty=\dimen337
+\tikz@lastxsaved=\dimen338
+\tikz@lastysaved=\dimen339
+\tikz@lastmovetox=\dimen340
+\tikz@lastmovetoy=\dimen341
+\tikzleveldistance=\dimen342
+\tikzsiblingdistance=\dimen343
+\tikz@figbox=\box80
+\tikz@figbox@bg=\box81
+\tikz@tempbox=\box82
+\tikz@tempbox@bg=\box83
+\tikztreelevel=\count543
+\tikznumberofchildren=\count544
+\tikznumberofcurrentchild=\count545
+\tikz@fig@count=\count546
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count547
+\pgfmatrixcurrentcolumn=\count548
+\pgf@matrix@numberofcolumns=\count549
+)
+\tikz@expandcount=\count550
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarychains.code.tex
+File: tikzlibrarychains.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen344
+\pgfdecoratedremainingdistance=\dimen345
+\pgfdecoratedinputsegmentcompleteddistance=\dimen346
+\pgfdecoratedinputsegmentremainingdistance=\dimen347
+\pgf@decorate@distancetomove=\dimen348
+\pgf@decorate@repeatstate=\count551
+\pgfdecorationsegmentamplitude=\dimen349
+\pgfdecorationsegmentlength=\dimen350
+)
+\tikz@lib@dec@box=\box84
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen351
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen352
+\pgfarrowlength=\dimen353
+\pgfarrowwidth=\dimen354
+\pgfarrowlinewidth=\dimen355
+) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count552
+\Gm@cntv=\count553
+\c@Gm@tempcnt=\count554
+\Gm@bindingoffset=\dimen356
+\Gm@wd@mp=\dimen357
+\Gm@odd@mp=\dimen358
+\Gm@even@mp=\dimen359
+\Gm@layoutwidth=\dimen360
+\Gm@layoutheight=\dimen361
+\Gm@layouthoffset=\dimen362
+\Gm@layoutvoffset=\dimen363
+\Gm@dimlist=\toks64
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/geometry-xetex-bidi.def
+File: geometry-xetex-bidi.def 2017/01/14 v0.2 bidi adaptations for geometry package for XeTeX engine
+) (c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip105
+\f@nch@offset@elh=\skip106
+\f@nch@offset@erh=\skip107
+\f@nch@offset@olh=\skip108
+\f@nch@offset@orh=\skip109
+\f@nch@offset@elf=\skip110
+\f@nch@offset@erf=\skip111
+\f@nch@offset@olf=\skip112
+\f@nch@offset@orf=\skip113
+\f@nch@height=\skip114
+\f@nch@footalignment=\skip115
+\f@nch@widthL=\skip116
+\f@nch@widthC=\skip117
+\f@nch@widthR=\skip118
+\@temptokenb=\toks65
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/fancyhdr-xetex-bidi.def
+File: fancyhdr-xetex-bidi.def 2025/01/07 v0.9 bidi adaptations for fancyhdr package for XeTeX engine
+
+
+Package bidi Warning: Oops! patching `\f@nch@hfbox@center' failed.
+
+
+Package bidi Warning: Oops! patching `\f@nch@hfbox@center' failed.
+
+
+Package bidi Warning: Oops! patching `\f@nch@hfbox@fit' failed.
+
+
+Package bidi Warning: Oops! patching `\f@nch@hfbox@fit' failed.
+
+) (c:/texlive/2025/texmf-dist/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip119
+\mylen=\skip120
+\myhi=\skip121
+\px=\skip122
+\py=\skip123
+\pyy=\skip124
+\pxx=\skip125
+\backskip=\skip126
+) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box85
+\beforetitleunit=\skip127
+\aftertitleunit=\skip128
+\ttl@plus=\dimen364
+\ttl@minus=\dimen365
+\ttl@toksa=\toks66
+\titlewidth=\dimen366
+\titlewidthlast=\dimen367
+\titlewidthfirst=\dimen368
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/titlesec-xetex-bidi.def
+File: titlesec-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for titlesec package for XeTeX engine
+) (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+ (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/lscape-xetex-bidi.def
+File: lscape-xetex-bidi.def 2025/01/03 v0.3 bidi adaptations for lscape package for XeTeX engine
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+)) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/pdflscape-xetex-bidi.def
+File: pdflscape-xetex-bidi.def 2022/02/18 v0.1 bidi adaptations for pdflscape package for XeTeX engine
+) (c:/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+\FN@temptoken=\toks67
+\footnotemargin=\dimen369
+Package footmisc Info: Declaring symbol style bringhurst on input line 549.
+Package footmisc Info: Declaring symbol style chicago on input line 557.
+Package footmisc Info: Declaring symbol style wiley on input line 566.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 577.
+Package footmisc Info: Declaring symbol style lamport* on input line 597.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 618.
+) (c:/texlive/2025/texmf-dist/tex/latex/contour/contour.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
+\con@length=\skip129
+
+Loading configuration file `contour.cfg'.
+(c:/texlive/2025/texmf-dist/tex/latex/contour/contour.cfg
+File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
+)
+contour: Using driver file `dvips.cnt'.
+(c:/texlive/2025/texmf-dist/tex/latex/contour/dvips.cnt
+File: dvips.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
+)) (c:/texlive/2025/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box86
+\UL@hyphenbox=\box87
+\UL@skip=\skip130
+\UL@hook=\toks68
+\UL@height=\dimen370
+\UL@pe=\count555
+\UL@pixel=\dimen371
+\ULC@box=\box88
+Package: ulem 2019/11/18
+\ULdepth=\dimen372
+) (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count556
+\l__lipsum_a_int=\count557
+\l__lipsum_b_int=\count558
+ (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+\c@tasknmbr=\count559
+\c@tasklabel=\count560
+) (c:/texlive/2025/texmf-dist/tex/xelatex/bidi/float-xetex-bidi.def
+File: float-xetex-bidi.def 2013/04/04 v0.2 bidi adaptations for float package for XeTeX engine
+)
+\@quotelevel=\count561
+\@quotereset=\count562
+ (./main.aux (./FrontMatter/titlepage.aux) (./FrontMatter/Acknowledgement.aux) (./FrontMatter/Abstract.aux) (./FrontMatter/Acronyms.aux) (./Chapters/01_Introduction.aux) (./Chapters/02_Background.aux) (./Chapters/03_Implementation.aux) (./Chapters/04_Results.aux) (./Chapters/05_Conclusion.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+Package hyperref Info: Link coloring ON on input line 5.
+ (./main.out) (./main.out)
+\@outlinefile=\write8
+\openout8 = `main.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (./main.glsdefs)
+Package biblatex Info: Trying to load language 'arabic'...
+Package biblatex Info: ... file 'arabic.lbx' not found.
+
+
+Package biblatex Warning: Language 'arabic' not supported.
+(biblatex)                Using dummy definitions on input line 5.
+
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+(c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+))
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout6 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 5.
+Package biblatex Info: Reference segment=0 on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(36.98866pt, 715.3022pt, 42.67912pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=715.3022pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-75.28133pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `FrontMatter/titlepage.aux'.
+
+(./FrontMatter/Titlepage.tex
+
+LaTeX Font Warning: Font shape `TU/Amiri(0)/m/sc' undefined
+(Font)              using `TU/Amiri(0)/m/n' instead on input line 4.
+
+File: Assets/Logo_ESI_SBA.png Graphic file (type bmp)
+<Assets/Logo_ESI_SBA.png>
+File: Assets/irisa.jpg Graphic file (type bmp)
+<Assets/irisa.jpg>
+File: Assets/cnrs-logo.jpg Graphic file (type bmp)
+<Assets/cnrs-logo.jpg>
+
+
+[1
+
+\openout3 = `main.ist'.
+
+
+])
+\openout2 = `FrontMatter/Acknowledgement.aux'.
+
+ (./FrontMatter/Acknowledgement.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+[][]
+ []
+
+
+
+[1
+
+
+
+]
+\openout2 = `FrontMatter/Abstract.aux'.
+
+ (./FrontMatter/Abstract.tex
+
+[2
+
+
+
+]
+
+[3])
+
+[4]
+\openout2 = `FrontMatter/Acronyms.aux'.
+
+ (./FrontMatter/Acronyms.tex
+\@gls@deffile=\write9
+\openout9 = `main.glsdefs'.
+
+
+
+Package glossaries Warning: Entry `placeholder' has already been defined in the document environment (ignoring new definition) on input line 3.
+
+
+Package glossaries Warning: Entry `placeholder' has already been defined in the document environment (ignoring new definition) on input line 4.
+
+) (./main.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[5
+
+
+
+
+
+
+])
+\tf@toc=\write10
+\openout10 = `main.toc'.
+
+
+
+[6] (./main.lof)
+\tf@lof=\write11
+\openout11 = `main.lof'.
+
+
+
+[7
+
+] (./main.lot)
+\tf@lot=\write12
+\openout12 = `main.lot'.
+
+ (./main.acr)
+
+[8
+
+]
+\openout2 = `Chapters/01_Introduction.aux'.
+
+ (./Chapters/01_Introduction.tex
+
+[9
+
+
+
+]
+Chapter 1.
+
+
+[10
+
+]
+
+[11])
+
+[12]
+\openout2 = `Chapters/02_Background.aux'.
+
+ (./Chapters/02_Background.tex
+
+[13
+
+
+
+
+]
+Chapter 2.
+File: Assets/Architecture-of-edge-computing.png Graphic file (type bmp)
+<Assets/Architecture-of-edge-computing.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[14
+
+]
+
+[15]
+File: assets/Serverless-Architecture.png Graphic file (type bmp)
+<assets/Serverless-Architecture.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: assets/Life-cycle-state-diagram-of-a-function-instance.png Graphic file (type bmp)
+<assets/Life-cycle-state-diagram-of-a-function-instance.png>
+
+
+[16]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[17]
+
+[18]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[19]
+
+[20])
+
+[21]
+\openout2 = `Chapters/03_Implementation.aux'.
+
+ (./Chapters/03_implementation.tex
+
+[22
+
+
+
+
+]
+Chapter 3.
+
+
+[23
+
+]
+File: assets/serverlesssimproArch.jpg Graphic file (type bmp)
+<assets/serverlesssimproArch.jpg>
+
+
+[24]
+File: assets/Apache OpenWhisk architecture.png Graphic file (type bmp)
+<assets/Apache OpenWhisk architecture.png>
+
+
+[25]
+File: Assets/cloudsimcs.png Graphic file (type bmp)
+<Assets/cloudsimcs.png>
+
+
+[26]
+
+[27]
+File: assets/faas-sim arch.png Graphic file (type bmp)
+<assets/faas-sim arch.png>
+File: assets/lambdacontsim.png Graphic file (type bmp)
+<assets/lambdacontsim.png>
+
+
+[28]
+
+[29]
+
+[30]
+Overfull \hbox (0.87076pt too wide) in paragraph at lines 211--212
+[]\TU/lmr/m/n/10.95 source heterogeneity, dynamic workload patterns, and network variability. Traditional cloud schedul-[]
+ []
+
+
+Overfull \hbox (1.3175pt too wide) in paragraph at lines 219--220
+[]\TU/lmr/m/n/10.95 proaches, though trade-offs between isolation and resource efficiency remain challenging. Lightweight[]
+ []
+
+
+
+[31]
+
+[32]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 246.
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[][]|\TU/lmr/bx/n/8 Serverless[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\TU/lmr/bx/n/8 SimPro[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[][]|\TU/lmr/m/n/8 Event-driven, trace-based[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[][]|\TU/lmr/m/n/8 CPU, memory, energy[]
+ []
+
+
+Underfull \hbox (badness 5274) in paragraph at lines 253--253
+[]\TU/lmr/m/n/8 (cold/warm starts, migra-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[][]|\TU/lmr/bx/n/8 faas-sim[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[][]|\TU/lmr/m/n/8 CPU, memory, network[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[][]|\TU/lmr/m/n/8 Full - heteroge-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[][]|\TU/lmr/m/n/8 High - modular[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]\TU/lmr/m/n/8 architecture, cus-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]\TU/lmr/m/n/8 tom schedulers,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]\TU/lmr/m/n/8 co-simulation sup-[]
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 266--266
+[][]|\TU/lmr/m/n/8 FET, network perfor-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[][]|\TU/lmr/bx/n/8 EdgeFaaS[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[][]|\TU/lmr/m/n/8 Event-driven, edge-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[]\TU/lmr/m/n/8 orchestration focused,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[][]|\TU/lmr/m/n/8 Full - multi-tier[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]\TU/lmr/m/n/8 edge, dynamic[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[][]|\TU/lmr/m/n/8 Medium -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[]\TU/lmr/m/n/8 YAML/Prolog con-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[]\TU/lmr/m/n/8 figs, placement[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[][]|\TU/lmr/m/n/8 Response time (60-[]
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 276--276
+[]\TU/lmr/m/n/8 180ms), success rates[]
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 276--276
+[]\TU/lmr/m/n/8 (28-84%), energy con-[]
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 277--278
+[]\TU/lmr/bx/n/8 Limitations: \TU/lmr/m/n/8 Limited network[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+[][]|\TU/lmr/bx/n/8 SimFaaS[]
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 282--282
+[][]|\TU/lmr/m/n/8 CPU, memory abstraction,[]
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 283--283
+[][]|\TU/lmr/m/n/8 Partial - region-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
+[][]|\TU/lmr/m/n/8 High - pluggable[]
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 284--284
+[]\TU/lmr/m/n/8 architecture, custom[]
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 285--285
+[]\TU/lmr/m/n/8 ratios, deadline viola-[]
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 285--285
+[]\TU/lmr/m/n/8 tions, resource utiliza-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+[][]|\TU/lmr/m/n/8 CPU, RAM, GPU us-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+[]\TU/lmr/m/n/8 age, container lifecycle[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[][]|\TU/lmr/m/n/8 Medium - multi-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\TU/lmr/m/n/8 provider configs,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\TU/lmr/m/n/8 simple scheduling[]
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 294--294
+[]\TU/lmr/m/n/8 put, service time, re-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[][]|\TU/lmr/bx/n/8 CloudSimSC[]
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 299--299
+[][]|\TU/lmr/m/n/8 Event-driven, cloud-centric,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+[][]|\TU/lmr/m/n/8 Partial - edge[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[][]|\TU/lmr/m/n/8 High - CloudSim[]
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 303--303
+[][]|\TU/lmr/m/n/8 Response time, execu-[]
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 304--305
+[][]|\TU/lmr/bx/n/8 Strengths: \TU/lmr/m/n/8 Established frame-[]
+ []
+
+
+Overfull \hbox (23.4526pt too wide) in paragraph at lines 246--308
+ [][][][] 
+ []
+
+
+
+[33
+
+]
+
+[34
+
+]
+Overfull \hbox (23.05472pt too wide) in paragraph at lines 332--333
+[][]\TU/lmr/bx/n/10.95 Scalability Across Urban Infrastructure\TU/lmr/m/n/10.95 : Smart city applications must scale from neighborhood-[]
+ []
+
+
+
+[35]
+Overfull \hbox (9.65561pt too wide) in paragraph at lines 385--386
+[][]\TU/lmr/bx/n/10.95 Profiling Overhead\TU/lmr/m/n/10.95 : Trace collection for new scenarios is resource-intensive and time-consuming. []
+ []
+
+)
+
+[36]
+\openout2 = `Chapters/04_Results.aux'.
+
+ (./Chapters/04_Results.tex
+
+[37
+
+
+
+
+]
+Chapter 4.
+
+
+[38
+
+]
+
+[39])
+
+[40]
+\openout2 = `Chapters/05_Conclusion.aux'.
+
+ (./Chapters/05_Conclusion.tex)
+
+[41
+
+
+
+
+
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 34.
+
+Overfull \hbox (6.87053pt too wide) in paragraph at lines 35--35
+[]\TU/lmr/m/n/12 less solutions. 2023. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][] [] [][][] [] [][][][][] [][] [][] [][] [][][][][][][][][][][]$[][][]. []
+ []
+
+
+
+[42
+
+]
+
+[43] (./main.aux (./FrontMatter/titlepage.aux) (./FrontMatter/Acknowledgement.aux) (./FrontMatter/Abstract.aux) (./FrontMatter/Acronyms.aux) (./Chapters/01_Introduction.aux) (./Chapters/02_Background.aux) (./Chapters/03_Implementation.aux) (./Chapters/04_Results.aux) (./Chapters/05_Conclusion.aux))
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 31E989190495E46A7B00B6EEF25741A6;13805.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 46794 strings out of 468442
+ 1009833 string characters out of 5449249
+ 2074448 words of memory out of 5000000
+ 74331 multiletter control sequences out of 15000+600000
+ 647875 words of font info for 107 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 92i,11n,95p,2532b,5646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (44 pages).
